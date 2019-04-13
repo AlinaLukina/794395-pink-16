@@ -18,10 +18,10 @@
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a>Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
+          <a href="#">Фотографии</a>
         </li>
         <li class="site-list__item">
           <a href="form.html">Конкурс</a>
@@ -32,15 +32,15 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="photo-main">
     <section class="photos">
       <div class="photos__wrapper">
         <h1 class="photos__title">Фотографии пользователей</h1>
       </div>
     </section>
-    <section class="">
-      <div class="">
-        <p class="">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <section class="lead">
+      <div class="lead__wrapper">
+        <p class="lead__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
     </section>
     <section class="publications">
@@ -56,7 +56,9 @@
             <p class="publications__time">(5 минут назад)</p>
             <p class="publications__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
               задавайте свои вопросы!</p>
-            <img class="publications__heart" src="img/icon-heart.svg" width="10" height="10" alt="like">
+              <button class="publications__button">
+            <span class="visually-hidden publications__heat-btn">like</span>
+          </button>
             <p class="publications__like">Нравится: 215</p>
           </div>
         </li>
@@ -69,7 +71,9 @@
             <h3 class="publications__author">Левон</h3>
             <p class="publications__time">(5 часов назад)</p>
             <p class="publications__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <img class="publications__heart" src="img/icon-heart.svg" width="10" height="10" alt="like">
+            <button class="publications__button">
+          <span class="visually-hidden publications__heat-btn">like</span>
+        </button>
             <p class="publications__like">Нравится: 356</p>
           </div>
         </li>
@@ -82,7 +86,9 @@
             <h3 class="publications__author">Антон</h3>
             <p class="publications__time">(12 часов назад)</p>
             <p class="publications__comment">Соседи будут рады!</p>
-            <img class="publications__heart" src="img/icon-heart.svg" width="10" height="10" alt="like">
+            <button class="publications__button">
+          <span class="visually-hidden publications__heat-btn">like</span>
+        </button>
             <p class="publications__like">Нравится: 666</p>
           </div>
         </li>
@@ -95,7 +101,9 @@
             <h3 class="publications__author">Борис</h3>
             <p class="publications__time">(20 часов назад)</p>
             <p class="publications__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <img class="publications__heart" src="img/icon-heart.svg" width="10" height="10" alt="like">
+            <button class="publications__button">
+          <span class="visually-hidden publications__heat-btn">like</span>
+        </button>
             <p class="publications__like">Нравится: 215</p>
           </div>
         </li>
@@ -108,7 +116,9 @@
             <h3 class="publications__author">Сергей</h3>
             <p class="publications__time">(25 часов назад)</p>
             <p class="publications__comment">Самая кубанская в мире!</p>
-            <img class="publications__heart" src="img/icon-heart.svg" width="10" height="10" alt="like">
+            <button class="publications__button">
+          <span class="visually-hidden publications__heat-btn">like</span>
+        </button>
             <p class="publications__like">Нравится: 4</p>
           </div>
         </li>
@@ -122,7 +132,9 @@
             <h3 class="publications__author">Максим</h3>
             <p class="publications__time">(40 часов назад)</p>
             <p class="publications__comment">Где снег-то?</p>
-            <img class="publications__heart" src="img/icon-heart.svg" width="10" height="10" alt="like">
+            <button class="publications__button">
+          <span class="visually-hidden publications__heat-btn">like</span>
+        </button>
             <p class="publications__like">Нравится: 150</p>
           </div>
         </li>
@@ -134,7 +146,9 @@
             <h3 class="publications__author">Надежда</h3>
             <p class="publications__time">(45 часов назад)</p>
             <p class="publications__comment">Всем GM и взаимные лайки!</p>
-            <img class="publications__heart" src="img/icon-heart.svg" width="10" height="10" alt="like">
+            <button class="publications__button">
+          <span class="visually-hidden publications__heat-btn">like</span>
+        </button>
             <p class="publications__like">Нравится: 2560</p>
           </div>
         </li>
