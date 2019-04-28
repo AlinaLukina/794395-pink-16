@@ -1,11 +1,24 @@
 .advantages {
   background-color: #f2f2f2;
+  position: relative;
 }
 
 .advantages__list {
   background-color: #f2f2f2;
   list-style: none;
   color: @background-color;
+}
+
+.advantages::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("img/iphone-screen-mobile@1x.png");
+  background-color: @background-color;
+  width: 157px;
+  height: 320px;
+  top:0;
+  left: 0;
 }
 
 .advantages__list-title {

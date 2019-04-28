@@ -1,5 +1,6 @@
 .app {
   background-color: @background-color;
+  position: relative;
 }
 
 .app__link {
@@ -7,10 +8,24 @@
   text-decoration: none;
   font-size: 18px;
   line-height: 18px;
+  list-style:
 }
 
 .app__description {
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
+}
+
+.app::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 462px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #283645;
+  background-size: 320px 462px;
 }
