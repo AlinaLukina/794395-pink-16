@@ -2,20 +2,29 @@
   background-color: @background-color;
   display: flex;
   flex-direction: column;
+  min-height:327px;
 }
 
-.page-header__logo {
-  height: 325px;
+.page-header__wrapper {
+  min-height: 69px;
+}
+
+.page-header__close {
+padding: 0;
+width: 24px;
+height: 24px;
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__logo {
-    height: 985px;
+  .page-header {
+min-height: 365px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__logo {
-    height: 394px;
+  .page-header {
+    display: flex;
+min-height: 110px;
   }
+
 }
