@@ -1,10 +1,13 @@
 .lead {
-      text-align: center;
+  text-align: center;
+  padding: 0 20px;
 }
+
 .lead__description {
   font-size: 24px;
   color: @background-color;
-  font-weight: 400;
+  font-weight: 300;
+  background-color: #ffffff;
 }
 
 .lead__description--form {
@@ -17,4 +20,17 @@
 .lead__description--photo {
   font-size: 14px;
   line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .lead__description {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .lead__offer {
+    text-align: center;
+    width: 320px;
+    margin: 0 auto;
+  }
 }

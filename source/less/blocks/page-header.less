@@ -1,30 +1,48 @@
 .page-header {
   background-color: @background-color;
-  display: flex;
-  flex-direction: column;
-  min-height:327px;
+  padding: 0 20px;
+}
+
+.page-header__logo {
+  width: 72px;
+  height: 22px;
 }
 
 .page-header__wrapper {
   min-height: 69px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .page-header__close {
-padding: 0;
-width: 24px;
-height: 24px;
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
-min-height: 365px;
+    min-height: 365px;
+  }
+  .page-header__close {
+    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
     display: flex;
-min-height: 110px;
+    min-height: 110px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-color: transparent;
+    background-size: 2560px 853px;
+    padding: 0 120px;
   }
 
+  .page-header__wrapper {
+    min-height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
