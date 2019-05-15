@@ -1,9 +1,16 @@
 .publications__list {
+  padding: 0 20px;
+  margin: 0;
   list-style: none;
+}
+
+.first__publication {
+  width: 100%;
 }
 
 .publications__review {
   background-color: #f2f2f2;
+  box-sizing: border-box;
 }
 
 .publications__author {
@@ -34,4 +41,29 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.publications__item {
+  padding: 0 20px;
+  width: 300px;
+}
+
+@media (min-width: 660px) {
+  .publications__list {
+    display: flex;
+    width: 660px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 960px) {
+  .publications__list {
+    width: 960px;
+  }
+
+  .publications__comment {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+  }
 }

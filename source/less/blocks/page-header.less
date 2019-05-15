@@ -1,6 +1,7 @@
 .page-header {
   background-color: @background-color;
   padding: 0 20px;
+  width: 320px;
 }
 
 .page-header__logo {
@@ -23,7 +24,9 @@
 @media (min-width: @tablet-width) {
   .page-header {
     min-height: 365px;
+    width: @tablet-width;
   }
+
   .page-header__close {
     display: none;
   }
@@ -36,7 +39,7 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-color: transparent;
     background-size: 2560px 853px;
-    padding: 0 120px;
+    width: @desktop-width;
   }
 
   .page-header__wrapper {
