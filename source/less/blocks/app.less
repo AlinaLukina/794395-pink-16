@@ -49,6 +49,7 @@
 
 .app__list {
   list-style: none;
+  z-index: 30;
   padding: 0;
   display: flex;
   justify-content: space-around;
@@ -76,10 +77,16 @@
     display: block;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     bottom: 0;
-    left: 0;
-    width: 700px;
+    left: -40px;
+    width: 660px;
     height: 545px;
     position: absolute;
+  }
+
+  .app__description {
+    z-index: 50;
+    font-size: 18px;
+    font-weight: 300;
   }
 }
 
@@ -88,8 +95,8 @@
     display: block;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     top: 100px;
-    left: 0;
-    width: 1050px;
+    left: -75px;
+    width: 960px;
     height: 645px;
     position: absolute;
   }
