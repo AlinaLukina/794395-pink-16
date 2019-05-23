@@ -12,7 +12,6 @@
 .lead__description--form {
   font-size: 24px;
   color: #ffffff;
-  font-size: 24px;
   font-weight: 300;
   margin: 0;
   background-color: transparent;
@@ -40,7 +39,6 @@
   .lead__description--form {
     font-size: 24px;
     color: #ffffff;
-    font-size: 50px;
     font-weight: 300;
   }
 
@@ -59,25 +57,23 @@
 }
 
 @media (min-width: @desktop-width) {
+  .lead__description {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    box-sizing: border-box;
+  }
 
-    .lead__description {
-      font-size: 18px;
-      line-height: 30px;
-      font-weight: 400;
-      box-sizing: border-box;
-    }
+  .lead__description--form {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 300;
+  }
 
-    .lead__description--form {
-      font-size: 50px;
-      color: #ffffff;
-      font-size: 50px;
-      font-weight: 300;
-    }
-
-    .lead--form {
-      background-image: url("../img/bg-back-desktop@1x.jpg");
-      background-size: 2560px 853px;
-      background-color: @background-color;
-      min-height: 395px;
-    }
+  .lead--form {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: 2560px 853px;
+    background-color: @background-color;
+    min-height: 395px;
+  }
 }
