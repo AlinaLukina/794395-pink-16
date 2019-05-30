@@ -1,10 +1,12 @@
 .publications__list {
   padding: 0 20px;
-  margin: 0;
+    margin: 0 auto;
+    width: 320px;
   list-style: none;
 }
 
-.first__publication {
+.publications__item--main {
+  display: block;
   width: 100%;
 }
 
@@ -52,9 +54,10 @@
     display: flex;
     width: 660px;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
 
-  .first__publication {
+  .publications__item--main {
     width: 100%;
   }
 }
@@ -62,6 +65,7 @@
 @media (min-width: 960px) {
   .publications__list {
     width: 960px;
+      margin: 0 auto;
   }
 
   .publications__comment {
@@ -70,7 +74,7 @@
     width: 300px;
   }
 
-  .first__publication {
+  .publications__item--main {
     width: 100%;
   }
 }
