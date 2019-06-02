@@ -1,0 +1,45 @@
+.contacts__description {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: @background-color;
+}
+
+.contucts__list-header {
+  font-size: 18px;
+  color: @background-color;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contucts__list-description {
+  font-size: 24px;
+  color: #d22856;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map::before {
+  position: absolute;
+  display: block;
+  background-image: url("img/bg-triangle-white.svg");
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 123px;
+}
+
+.contacts__map::after {
+  position: absolute;
+  display: block;
+  background-image: url("img/icon-map-marker.svg");
+  top: 180px;
+  left: 180px;
+  width: 36px;
+  height: 35px;
+}
