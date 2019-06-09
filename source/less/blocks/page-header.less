@@ -1,6 +1,7 @@
 .page-header {
   background-color: @background-color;
   position: relative;
+  width: 100%;
 }
 
 .page-header__logo {
@@ -12,6 +13,37 @@
   min-height: 69px;
   display: flex;
   justify-content: space-between;
+}
+
+.page-header__toggle {
+  padding: 20px;
+  width: 90px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 30;
+  display: block;
+  background-color: @background-color;
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+}
+
+.page-header__toggle--closed {
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 30px;
+}
+
+.page-header__toggle--opened {
+  background-image: url("../img/icon-menu-cross.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
 }
 
 @media (min-width: @tablet-width) {
@@ -37,7 +69,11 @@
     align-items: center;
   }
 
-  .main-nav__toggle {
+  .page-header__toggle {
+    display: none;
+  }
+
+  .pade-header__toggle--closed + .main-nav__list {
     display: none;
   }
 }
