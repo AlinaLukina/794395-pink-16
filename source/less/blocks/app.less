@@ -1,12 +1,13 @@
 .app {
   display: block;
   position: relative;
-  min-height: 396px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 0 50%;
   background-repeat: no-repeat;
   width: 320px;
   margin: 0 auto;
+  min-height: 207px;
+  padding-top: 465px;
 }
 
 .app__header {
@@ -23,7 +24,7 @@
   background-repeat: no-repeat;
   width: 258px;
   height: 286px;
-  bottom: 0;
+  bottom: 209px;
   left: 0;
 }
 
@@ -36,6 +37,10 @@
   text-align: center;
   display: block;
   font-weight: 600;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+  padding: 11px 0;
+  margin: 20px;
 }
 
 .app__description {
@@ -92,7 +97,6 @@
 
 @media (min-width: @desktop-width) {
   .app__hand {
-    display: block;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     top: 100px;
     left: -75px;
