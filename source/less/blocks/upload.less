@@ -27,6 +27,7 @@
   height: 2px;
   background-color: @background-color;
 }
+
 .upload__filters-toggle {
   width: 16px;
   height: 16px;
@@ -90,7 +91,7 @@
     display: block;
     position: absolute;
     top: 50%;
-transform: translateY(-50%);
+    transform: translateY(-50%);
     z-index: 10;
     left: 0;
     background-color: #ffffff;
@@ -117,16 +118,25 @@ transform: translateY(-50%);
     display: block;
   }
 
-.upload__filters-row {
-  display: flex;
-  align-items: center;
+  .upload__filters-row {
+    display: flex;
+    align-items: center;
     margin-bottom: 30px;
     border-bottom: 2px solid #dddfe0;
     padding-bottom: 20px;
-}
-
+  }
 
   .upload__filters-icon {
     margin-right: 35px;
+  }
+
+  .upload__image-picture {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .upload__image-picture {
+    width: 300px;
   }
 }

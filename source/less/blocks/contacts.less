@@ -50,18 +50,25 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .contucts-list {
     display: flex;
     margin: 0 auto;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .contacts__map {
+    width: 700px;
   }
 
   .contucts-list__paragraph {
     width: 300px;
     margin: 0 auto;
     box-sizing: border-box;
-
   }
+}
 
+@media (min-width: @desttop-width) {
+  .contacts__map {
+    width: 1200px;
+  }
 }

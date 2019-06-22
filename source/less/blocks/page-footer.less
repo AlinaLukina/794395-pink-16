@@ -1,3 +1,7 @@
+.page-footer {
+  display: none;
+}
+
 .page-footer__logo {
   display: flex;
   margin: 0 auto;
@@ -13,6 +17,10 @@
 }
 
 @media (min-width: 660px) {
+  .page-footer {
+    display: block;
+  }
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
@@ -35,7 +43,7 @@
 
 @media (min-width: 960px) {
   .page-footer {
-
+    display: block;
     box-sizing: border-box;
   }
 }
