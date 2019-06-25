@@ -41,19 +41,23 @@
       <h1 class="lead__description lead__description--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
     <div class="bonus">
-      <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <div class="container">
+      <p class="bonus__paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        </div>
     </div>
     <section class="form">
+      <div class="container">
       <form class="" action="#" method="post">
         <h2 class="visually-hidden">Заполните форму</h2>
-        <fieldset class="form__identity">
-          <label for="surname">Фамилия</label>
-          <input type="text" name="Фамилия" id="surname" placeholder="Укажите фамилию *">
-          <label for="name">Имя</label>
-          <input type="text" name="Имя" id="name" placeholder="Введите ваше имя *">
-          <label for="f-name">Отчество</label>
-          <input type="text" name="Отчество" id="f-name" placeholder="Ну и отчество тоже">
+        <fieldset class="form__identity form-id">
+          <p class="form-id__block"><label for="surname">Фамилия</label>
+          <input type="text" name="Фамилия" id="surname" placeholder="Укажите фамилию *"></p>
+          <p class="form-id__block"><label for="name">Имя</label>
+          <input type="text" name="Имя" id="name" placeholder="Введите ваше имя *"></p>
+          <p class="form-id__block"><label for="f-name">Отчество</label>
+          <input type="text" name="Отчество" id="f-name" placeholder="Ну и отчество тоже"></p>
         </fieldset>
+        </div>
         <fieldset class="form__travel-app">
           <legend class="form__travel-app-name">С каким приложением путешествовали?
           </legend>
@@ -69,6 +73,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__contact-info">
+          <div class="container">
           <legend>Контактная информация</legend>
           <p><span> <input type="tel" name="phone-number" value="phone" placeholder="Номер, пожалуйста" id="phone"> </span>
             <label for="phone">номер телефона</label>
@@ -76,10 +81,11 @@
           <p><span> <input type="email" name="email" value="email" placeholder="Введите почту *" id="email"> </span>
                 <label for="email">Адрес почты</label>
           </p>
+        </div>
         </fieldset>
         <fieldset class="form__skills">
           <legend>Ваши безбашенные достижения в путешествии</legend>
-          <ul>
+          <ul class="form__skills-list">
             <li>
               <input type="checkbox" name="selfie" value="" id="selfie">
               <label for="selfie">Сделал селфи с акулой</label>
@@ -97,15 +103,21 @@
           </ul>
         </fieldset>
         <fieldset class="form__text">
+          <div class="container">
           <legend>Опишите свои эмоции</legend>
           <label class="visually-hidden" for="textarea">введите текст</label>
           <textarea name="name" placeholder="Можно прям в красках, не стесняясь в выражениях" id="textarea"></textarea>
+        </div>
         </fieldset>
+        <div class="container">
         <button type="submit" name="button" value="отправить">Отправить форму</button>
+
         <p>
           <span>*</span> — обязательные для заполнения поля
         </p>
+      </div>
       </form>
+
     </section>
   </main>
   <footer class="page-footer">
