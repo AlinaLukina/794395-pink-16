@@ -1,5 +1,6 @@
 .text {
   margin-bottom: 50px;
+  padding: 0 20px;
 }
 
 .text__legend {
@@ -49,4 +50,24 @@
 .text__paragraph span {
   color: #d4345f;
   font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+  .text {
+    background-color: initial;
+    border: 2px solid #e5e5e5;
+    margin: 0 20px 60px;
+    padding: 0 62px 52px;
+  }
+
+  .text__legend {
+    padding: 0;
+    background-color: initial;
+    width: initial;
+    margin-bottom: 50px;
+  }
+
+  .text__btn {
+    margin: 0;
+  }
 }

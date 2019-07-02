@@ -1,9 +1,5 @@
-.form-skills {
-  padding: 40px 0 0;
-  box-sizing: border-box;
-  margin: 0;
-  background-color: #f2f2f2;
-  border: none;
+.form {
+  margin: 0 auto;
 }
 
 .form__legend {
@@ -13,46 +9,26 @@
   text-align: center;
 }
 
-.form-skills__legend {
-  line-height: 18px;
-  color: #d4345f;
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 40px;
-  background-color: #f2f2f2;
-  padding-left: 30px;
-  padding-right: 29px;
-  padding-bottom: 40px;
-  width: 100%;
-}
-
-.form-skills__list {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  list-style: none;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .skills-list__item {
   padding-left: 70px;
   margin-bottom: 55px;
 }
 
-.skills-list__label{
+.skills-list__label {
   font-size: 18px;
   line-height: 30px;
   color: @background-color;
   position: relative;
   cursor: pointer;
+  align-items: center;
+  display: flex;
 }
 
 .skills-list__input {
   display: none;
 }
 
-.skills-list__input+label::before {
+.skills-list__input + label::before {
   position: absolute;
   content: "";
   top: 0;
@@ -62,7 +38,8 @@
   width: 35px;
   height: 35px;
 }
-.skills-list__input:checked+label::after {
+
+.skills-list__input:checked + label::after {
   position: absolute;
   content: "";
   top: 0;
@@ -82,23 +59,26 @@
 
 .form__fieldset__paragraph span {
   display: flex;
-    order: 2;
-    width: 100%;
+  order: 2;
+  width: 100%;
 }
 
 .form__fieldset__paragraph label {
-display: block;
-    padding-left: 20px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    line-height: 30px;
-    color: #d4345f;
-    text-transform: uppercase;
-  }
+  display: block;
+  padding-left: 20px;
+  box-sizing: border-box;
+  line-height: 30px;
+  color: #d4345f;
+  text-transform: uppercase;
+}
 
 .form__fieldset {
   padding: 0;
   border: 0;
+}
+
+.form__contact-info {
+  padding: 0 20px;
 }
 
 .form__contact-info input {
@@ -110,15 +90,62 @@ display: block;
 
 .form__contact-info input[placeholder] {
   font-size: 18px;
-line-height: 30px;
-color: #283645;
-padding-left: 23px;
--webkit-box-sizing: border-box;
-box-sizing: border-box;
+  line-height: 30px;
+  color: #283645;
+  padding-left: 23px;
+  box-sizing: border-box;
 }
 
 .form__travel-app {
   box-sizing: border-box;
-margin: 0;
-background-color: #f2f2f2;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .form__travel-app {
+    background-color: initial;
+    border: 2px solid #e5e5e5;
+    margin: 0 20px 60px;
+  }
+
+  .form__contact-info {
+    border: 2px solid #e5e5e5;
+    margin: 0 20px;
+    padding: 35px 60px;
+    margin-bottom: 60px;
+  }
+
+  .form__identity {
+    margin-bottom: 60px;
+  }
+
+  .form__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .form__header {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form__contact-info {
+    width: 100%;
+  }
+
+  .form__text {
+    width: 100%;
+  }
 }

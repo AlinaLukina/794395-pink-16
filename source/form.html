@@ -46,7 +46,8 @@
       </div>
     </div>
     <section class="form">
-      <div class="container">
+      <div class="form__wrapper">
+      <div class="form__header container">
         <form class="" action="#" method="post">
           <h2 class="visually-hidden">Заполните форму</h2>
           <fieldset class="form__fieldset form__identity form-id">
@@ -74,16 +75,17 @@
         </ul>
 
       </fieldset>
-      <fieldset class="form__fieldset form__contact-info">
-        <div class="container">
-          <legend class="form__legend visually-hidden">Контактная информация</legend>
-          <p class="form__fieldset__paragraph"><span> <input type="tel" name="phone-number" value="phone" placeholder="Номер, пожалуйста" id="phone"> </span>
+
+      <fieldset class="form__fieldset form__contact-info contact-info">
+
+          <legend class="form__legend contact-info__legend">Контактная информация</legend>
+          <p class="form__fieldset__paragraph"><span class="contact-info__span contact-info__phone"> <input type="tel" name="phone-number" value="phone" placeholder="Номер, пожалуйста" id="phone"> </span>
             <label for="phone">номер телефона</label>
           </p>
-          <p class="form__fieldset__paragraph"><span> <input type="email" name="email" value="email" placeholder="Введите почту *" id="email"> </span>
+          <p class="form__fieldset__paragraph"><span class="contact-info__span contact-info__mail"> <input type="email" name="email" value="email" placeholder="Введите почту *" id="email"> </span>
             <label for="email">Адрес почты</label>
           </p>
-        </div>
+
       </fieldset>
       <fieldset class="form__fieldset form-skills">
         <legend class="form__legend form-skills__legend">Ваши безбашенные достижения в путешествии</legend>
@@ -110,13 +112,13 @@
         </ul>
       </fieldset>
       <fieldset class="form__fieldset form__text text">
-        <div class="container">
+
           <legend class="form__legend text__legend">Опишите свои эмоции</legend>
           <label class="visually-hidden" for="textarea">введите текст</label>
           <div class="text__block"><textarea class="text__texarea" name="name" placeholder="Можно прям в красках, не стесняясь в выражениях" id="textarea"></textarea></div>
-        </div>
+
       </fieldset>
-      <div class="container">
+      <div class="container form__footer">
         <button class="text__btn" type="submit" name="button" value="отправить">Отправить форму</button>
 
         <p class="text__paragraph">
@@ -124,7 +126,7 @@
         </p>
       </div>
       </form>
-
+</div>
     </section>
   </main>
   <footer class="page-footer">
@@ -159,7 +161,6 @@
                   <path fill="#d22856"
                     d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
                 </svg>
-
               </a>
             </li>
             <li class="social__item">
@@ -175,7 +176,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="button page-footer__copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
               xml:space="preserve">
               <path fill="#d22856"
