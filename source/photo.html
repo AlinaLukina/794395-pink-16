@@ -12,7 +12,11 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Pink">
+        </picture>
       </a>
       <button class="page-header__toggle page-header__toggle--closed" type="button">
         <span class="visually-hidden"> Закрыть </span>
@@ -51,10 +55,10 @@
             <picture>
               <source class="publications__panorama" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
                 <source class="publications__panorama" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-            <img class="publications__panorama" src="img/panorama-mobile@1x.jpg" width="320" height="140" alt="Панорама">
+            <img class="publications__panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама">
             </picture>
           </div>
-          <div class="publications__review">
+          <div class="publications__review publications__review--main">
             <h3 class="publications__author">Анна</h3>
             <p class="publications__time">(5 минут назад)</p>
             <p class="publications__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
@@ -71,7 +75,7 @@
             <picture>
               <source class="publications__image" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
                 <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-                    <img class="publications__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="car">
+                    <img class="publications__image" src="img/photo-car-mobile@1x.jpg" alt="car">
             </picture>
           </div>
           <div class="publications__review">
@@ -90,7 +94,7 @@
             <picture>
               <source class="publications__image" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
                 <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                <img class="publications__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Drums">
+                <img class="publications__image" src="img/photo-drumset-mobile@1x.jpg" alt="Drums">
             </picture>
           </div>
           <div class="publications__review">
@@ -109,7 +113,7 @@
             <picture>
               <source class="publications__image" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
                 <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-                <img class="publications__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="sky">
+                <img class="publications__image" src="img/photo-window-mobile@1x.jpg" alt="sky">
             </picture>
           </div>
           <div class="publications__review">
@@ -128,7 +132,7 @@
             <picture>
               <source class="publications__image" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
                 <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                  <img class="publications__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="fest">
+                  <img class="publications__image" src="img/photo-fair-mobile@1x.jpg" alt="fest">
             </picture>
           </div>
           <div class="publications__review">
@@ -148,7 +152,7 @@
             <picture>
               <source class="publications__image" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
                 <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                  <img class="publications__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="green-mountains">
+                  <img class="publications__image" src="img/photo-pov-mobile@1x.jpg" alt="green-mountains">
             </picture>
           </div>
           <div class="publications__review">
@@ -166,7 +170,7 @@
             <picture>
               <source class="publications__image" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
                 <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                  <img class="publications__image" src="img/photo-wing-mobile@1x.jpg" width="320" height="140" alt="sunrise">
+                  <img class="publications__image" src="img/photo-wing-mobile@1x.jpg" alt="sunrise">
             </picture>
           </div>
           <div class="publications__review">
