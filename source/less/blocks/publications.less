@@ -6,19 +6,29 @@
 }
 
 .publications__item--main {
-  display: block;
   width: 100%;
+      margin: 0 auto;
+      padding: 0;
 }
 
 .publications__review {
   background-color: #f2f2f2;
   box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 280px;
 }
 
 .publications__author {
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;
+  margin: 0;
+}
+
+.publications__panorama {
+  display: block;
+  margin: 0 auto;
 }
 
 .publications__time {
@@ -43,10 +53,12 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .publications__item {
-  width: 300px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .subheading p {
@@ -57,32 +69,83 @@
   font-weight: 400;
 }
 
+.publications__image {
+  display: block;
+margin: 0 auto;
+    max-width: 280px;
+}
+
 @media (min-width: 660px) {
   .publications__list {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     padding: 0;
+        max-width: 738px;
   }
+
+  .publications__item:nth-of-type(2n) {
+    margin-left: 20px;
+   }
+
+   .publications__item:nth-of-type(2n+1) {
+     margin-right: 20px;
+   }
+
+   .publications__image {
+     max-width: 100%;
+   }
 
   .publications__item--main {
     width: 100%;
+     margin-right: 0;
+     margin-left: 0;
+  }
+
+  .publications__review{
+    max-width: 300px;
+  }
+
+  .publications__review--main {
+    max-width: 700px;
+        margin: 0 auto;
+        margin-right: 20px;
+        margin-left: 20px;
   }
 }
 
 @media (min-width: 960px) {
   .publications__list {
-    width: 960px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
   .publications__comment {
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
+    width: 100%;
   }
 
   .publications__item--main {
     width: 100%;
   }
+  .publications__review--main {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .publications__item {
+    margin-left: 20px;
+    margin-right: 20px;
+   }
+
+   .publications__item:nth-of-type(3) {
+     margin-right: 0;
+     margin-left: 0;
+   }
+
+   .publications__item:nth-of-type(6) {
+     margin-right: 0;
+     margin-left: 0;
+   }
 }

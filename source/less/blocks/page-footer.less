@@ -1,10 +1,11 @@
-.page-footer {
+.page-footer__index {
   display: none;
 }
 
 .page-footer__logo {
-  display: flex;
+  display: block;
   margin: 0 auto;
+  text-align: center;
 }
 
 .page-footer__copyright {
@@ -22,6 +23,10 @@
 }
 
 @media (min-width: 660px) {
+  .page-footer__index {
+    display: block;
+  }
+
   .page-footer {
     display: block;
   }
