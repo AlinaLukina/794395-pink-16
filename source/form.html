@@ -53,7 +53,7 @@
       <div class="form__wrapper">
 
         <form class="" action="#" method="post">
-          <div class="form__header container">
+          <div class="form__fieldset form__header container form__fieldset--header">
           <h2 class="visually-hidden">Заполните форму</h2>
           <fieldset class="form__fieldset form__identity form-id">
             <p class="form-id__block"><label for="surname">Фамилия</label>
@@ -64,35 +64,8 @@
               <input type="text" name="Отчество" id="f-name" placeholder="Ну и отчество тоже"></p>
           </fieldset>
       </div>
-      <fieldset class="form__fieldset form__travel-app travel-app">
 
-        <legend class="form__legend travel-app__legend">С каким приложением путешествовали?
-        </legend>
-        <ul class="travel-app__list">
-          <li class="travel-app__item">
-            <input class="travel-app__input" type="radio" name="travel-app" value="ios" id="ios" checked>
-            <label class="travel-app__label" for="ios">Pink для iOS</label>
-          </li>
-          <li class="travel-app__item"><input class="travel-app__input" type="radio" name="travel-app" value="android" id="android">
-            <label class="travel-app__label" for="android">Pink на Android</label></li>
-          <li class="travel-app__item"><input class="travel-app__input" type="radio" name="travel-app" value="windows-phone" id="windowsphone">
-            <label class="travel-app__label" for="windowsphone">Windows Phone</label></li>
-        </ul>
-
-      </fieldset>
-
-      <fieldset class="form__fieldset form__contact-info contact-info">
-
-          <legend class="form__legend contact-info__legend">Контактная информация</legend>
-          <p class="form__fieldset__paragraph"><span class="contact-info__span contact-info__phone"> <input type="tel" name="phone-number" value="phone" placeholder="Номер, пожалуйста" id="phone"> </span>
-            <label for="phone">номер телефона</label>
-          </p>
-          <p class="form__fieldset__paragraph"><span class="contact-info__span contact-info__mail"> <input type="email" name="email" value="email" placeholder="Введите почту *" id="email"> </span>
-            <label for="email">Адрес почты</label>
-          </p>
-
-      </fieldset>
-      <fieldset class="form__fieldset form-skills">
+      <fieldset class="form__fieldset form-skills form__fieldset--skills">
         <legend class="form__legend form-skills__legend">Ваши безбашенные достижения в путешествии</legend>
         <ul class="form-skills__list skills-list">
           <li class="skills-list__item">
@@ -116,7 +89,37 @@
             <label class="skills-list__label" for="hotel">Разгромил отель</label></li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset form__text text">
+
+      <fieldset class="form__fieldset form__contact-info contact-info form__fieldset--contacts">
+
+          <legend class="form__legend contact-info__legend">Контактная информация</legend>
+          <p class="form__fieldset__paragraph"><span class="contact-info__span contact-info__phone"> <input type="tel" name="phone-number"  placeholder="Номер, пожалуйста" id="phone"> </span>
+            <label for="phone">номер телефона</label>
+          </p>
+          <p class="form__fieldset__paragraph"><span class="contact-info__span contact-info__mail"> <input type="email" name="email" placeholder="Введите почту *" id="email"> </span>
+            <label for="email">Адрес почты</label>
+          </p>
+
+      </fieldset>
+
+      <fieldset class="form__fieldset form__travel-app travel-app form__fieldset--app">
+
+        <legend class="form__legend travel-app__legend">С каким приложением путешествовали?
+        </legend>
+        <ul class="travel-app__list">
+          <li class="travel-app__item">
+            <input class="travel-app__input" type="radio" name="travel-app" value="ios" id="ios" checked>
+            <label class="travel-app__label" for="ios">Pink для iOS</label>
+          </li>
+          <li class="travel-app__item"><input class="travel-app__input" type="radio" name="travel-app" value="android" id="android">
+            <label class="travel-app__label" for="android">Pink на Android</label></li>
+          <li class="travel-app__item"><input class="travel-app__input" type="radio" name="travel-app" value="windows-phone" id="windowsphone">
+            <label class="travel-app__label" for="windowsphone">Windows Phone</label></li>
+        </ul>
+
+      </fieldset>
+
+      <fieldset class="form__fieldset form__text text form__fieldset--text">
 
           <legend class="form__legend text__legend">Опишите свои эмоции</legend>
           <label class="visually-hidden" for="textarea">введите текст</label>

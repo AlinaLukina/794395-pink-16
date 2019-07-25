@@ -57,6 +57,18 @@
   width: 100%;
 }
 
+  .form__fieldset--app {
+    padding: 0;
+  }
+
+.form__fieldset__paragraph input::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: @background-color;
+  padding-left: 23px;
+  box-sizing: border-box;
+}
+
 .form__fieldset__paragraph span {
   display: flex;
   order: 2;
@@ -72,10 +84,6 @@
   text-transform: uppercase;
 }
 
-.form__fieldset {
-  padding: 0;
-  border: 0;
-}
 
 .form__contact-info {
   padding: 0 20px;
@@ -88,7 +96,7 @@
   padding: 0;
 }
 
-.form__contact-info input[placeholder] {
+.form__contact-info::placeholder {
   font-size: 18px;
   line-height: 30px;
   color: #283645;
@@ -100,6 +108,20 @@
   box-sizing: border-box;
   margin: 0;
   background-color: #f2f2f2;
+}
+
+.form__fieldset--contacts  {
+  border: none;
+}
+
+.form__fieldset--app {
+  border: none;
+}
+
+.form__fieldset--text {
+  border: 2px solid #e5e5e5;
+margin: 0 20px 60px;
+    padding: 0 62px 52px;;
 }
 
 @media (min-width: @tablet-width) {
@@ -124,6 +146,37 @@
     display: flex;
     justify-content: space-between;
   }
+
+.form__wrapper form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .form__fieldset--text {
+order: 5;
+  }
+
+  .form__fieldset--app {
+order: 2;
+width: 100%;
+  }
+
+  .form__fieldset--contacts {
+order: 3;
+width: 100%;
+
+  }
+
+  .form__fieldset--skills {
+order: 4;
+  }
+
+  .form__fieldset--header {
+order: 1;
+  }
+  .form__footer {
+    order: 6;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -135,17 +188,7 @@
     margin: 0 auto;
   }
 
-  .form__header {
-    width: 50%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .form__contact-info {
-    width: 100%;
-  }
-
-  .form__text {
+  .form__wrapper form {
     width: 100%;
   }
 }

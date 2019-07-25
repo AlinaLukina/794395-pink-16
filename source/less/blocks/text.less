@@ -1,6 +1,6 @@
 .text {
   margin-bottom: 50px;
-  padding: 0 20px;
+
 }
 
 .text__legend {
@@ -22,7 +22,7 @@
   border: 2px solid #e5e5e5;
 }
 
-.text__texarea[type="textarea"] {
+.text__texarea::placeholder {
   color: @background-color;
 }
 
@@ -58,6 +58,7 @@
     border: 2px solid #e5e5e5;
     margin: 0 20px 60px;
     padding: 0 62px 52px;
+    width: 100%;
   }
 
   .text__legend {
