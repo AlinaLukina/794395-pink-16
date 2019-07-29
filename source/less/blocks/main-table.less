@@ -1,0 +1,22 @@
+.main-table {
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .main-table {
+    position: relative;
+    margin-bottom: 55px;
+  }
+
+  .main-table::before {
+    content: "";
+    display: block;
+    background-image: url("../img/bg-triangle-white.svg");
+    width: 100%;
+    background-repeat:no-repeat;
+    height: 95px;
+    top: 0;
+    left: 0;
+  }
+}

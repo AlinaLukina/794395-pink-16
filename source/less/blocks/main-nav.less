@@ -2,20 +2,40 @@
   background-color: @background-color;
   margin: 0 auto;
   width: 100%;
+  display: flex;
+flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .main-nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%
 }
+
+@media (max-width: @mobile-tablet) {
+.main-nav--closed .site-list__item {
+  display: none;
+}
+
+.main-nav--opened .site-list__item {
+  display: block;
+}
+
+.main-nav--nojs .site-list {
+  display: block;
+}
+}
+
+
 
 @media (min-width: @desktop-width) {
   .main-nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 800px;
+    width: 960px;
     background-color: transparent;
     line-height: 57px;
   }
