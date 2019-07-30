@@ -6,7 +6,7 @@
   max-width: 320px;
   margin: 0 auto;
   min-height: 207px;
-  padding-top: 465px;
+    padding-top: 391px;
 }
 
 .app__header {
@@ -40,6 +40,8 @@
   border-radius: 25px;
   padding: 11px 0;
   margin: 20px;
+  background-color: @background-color;
+
 }
 
 .app__description {
@@ -65,16 +67,25 @@
     background-position: 50% 0;
     padding: 0;
     display: flex;
-    min-height: 620px;
+    min-height: 618px;
     flex-direction: column;
     width: 300px;
     background-color: transparent;
     margin: 0;
   }
 
+  .app__wrapper {
+    z-index: 31;
+  }
+
   .app__header {
     display: block;
-    text-align: center;
+  text-align: center;
+  padding-top: 91px;
+  width: 245px;
+  line-height: 48px;
+  margin: 0 auto;
+      margin-bottom: 30px;
   }
 
   .app__hand {
@@ -91,6 +102,21 @@
     z-index: 50;
     font-size: 18px;
     font-weight: 300;
+        margin-top: 18px;
+  }
+
+  .app__link {
+    padding: 15px 0;
+    margin-top: 30px;
+    margin: initial;
+    background-color: initial;
+  }
+
+  .app__list {
+    justify-content: space-between;
+margin-top: 45px;
+align-items: baseline;
+padding: 0 47px;
   }
 }
 

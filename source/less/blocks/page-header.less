@@ -13,7 +13,7 @@
 }
 
 .page-header__toggle {
-  width: 90px;
+  width: 60px;
   height: 70px;
   top: 0;
   right: 0;
@@ -28,14 +28,12 @@
 .page-header__toggle--closed {
   background-image: url("../img/icon-menu-burger.svg");
   background-repeat: no-repeat;
-  background-size: 50px 30px;
-  background-position: 50% 50%;
+  background-position: center;
 }
 
 .page-header__toggle--opened {
   background-image: url("../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
-  background-size: 30px 30px;
   background-position: center;
 }
 
@@ -43,6 +41,13 @@
   .page-header__logo img {
     display: block;
     height: auto;
+    padding-bottom: 15px;
+  }
+  .page-header__wrapper {
+        min-height: 110px;
+  }
+  .page-header__toggle{
+    height: initial;
   }
 }
 
@@ -67,11 +72,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: initial
+    width: initial;
+      padding-left: 0;
   }
 
   .page-header__toggle {
     display: none;
   }
 
+.page-header__logo img {
+  display: block;
+height: auto;
+width: 150px;
+padding-left: 8px;
+padding-bottom: 15px;
+}
 }
