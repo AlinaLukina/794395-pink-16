@@ -22,12 +22,19 @@
   border-radius: 50%;
 }
 
-.price-slider {
-  display: flex;
-}
-
 @media (min-width: @tablet-width) {
-  .price-slider {
-    display: none;
+
+
+  .slider__list {
+    align-items: center;
+  }
+
+  .slider__list-item--active {
+    width: 13px;
+    height: 13px;
+    background-color: #ffffff;
+    border: 3px solid #283645;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }

@@ -31,6 +31,47 @@
   display: none;
 }
 
+@media (min-width: @tablet-width) {
+  .review {
+    position: relative;
+display: flex;
+flex-wrap: wrap;
+  }
+    .review__id {
+        display: block;
+        text-align: center;
+            margin-top: 5px;
+        width: 100%;
+        order: 3;
+  }
+
+  .review__name {
+    font-size: 20px;
+line-height: 30px;
+text-align: center;
+font-weight: 700;
+padding: 0;
+margin-top: 16px;
+width: 100%;
+order: 2;
+  }
+
+.review__description {
+  font-size: 18px;
+line-height: 30px;
+color: #283645;
+text-align: center;
+order: 1;
+}
+.review__slider {
+  display: flex;
+list-style: none;
+align-items: center;
+width: 100%;
+order: 4;
+}
+}
+
 @media (min-width: @desktop-width) {
   .review__button {
     display: block;

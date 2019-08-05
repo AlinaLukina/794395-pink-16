@@ -7,10 +7,11 @@
   color: @background-color;
   font-weight: 300;
   background-color: #ffffff;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 26px;
+margin-top: 45px;
 }
 
 .lead__description--form {
@@ -28,6 +29,10 @@
   line-height: 30px;
 }
 
+.lead__description--offer {
+  margin-top: 35px;
+}
+
 .lead--form {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: @background-color;
@@ -37,10 +42,16 @@
 
 @media (min-width: @tablet-width) {
   .lead__description {
-    font-size: 18px;
+    font-size: 40px;
     line-height: 30px;
-    font-weight: 400;
-    margin: 0;
+    font-weight: 300;
+    margin-top: 56px;
+    margin-bottom: 0;
+  }
+
+  .lead__description--offer {
+    margin: 13px 20px;
+line-height: 46px;
   }
 
   .lead__description--form {
@@ -65,10 +76,11 @@
 
 @media (min-width: @desktop-width) {
   .lead__description {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300;
     box-sizing: border-box;
+    margin-top: 65px;
   }
 
   .lead__description--form {
@@ -82,5 +94,10 @@
     background-size: 2560px 853px;
     background-color: @background-color;
     min-height: 395px;
+  }
+
+  .lead__description--offer {
+    margin: 0px 100px 0px 93px;
+    line-height: 60px;
   }
 }
