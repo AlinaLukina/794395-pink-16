@@ -1,6 +1,19 @@
 .main-table {
   overflow: hidden;
-  background-color: #f2f2f2;
+      background-color: #f2f2f2;
+      margin-top: 42px;
+
+      &::before {
+          content: "";
+          display: block;
+          background-image: url(../img/bg-triangle-white.svg);
+          width: 100%;
+          background-repeat: no-repeat;
+              height: 92px;
+          background-size: 100% 25px;
+          top: 64px;
+          left: 0;
+      }
 }
 
 @media (min-width: @tablet-width) {
