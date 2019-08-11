@@ -97,6 +97,7 @@ background-repeat: no-repeat;
     left: 0;
     background-size: cover;
     position: absolute;
+    z-index: 1;
 }
 
   .advantages__list {
@@ -106,6 +107,7 @@ background-repeat: no-repeat;
     max-width: 660px;
 margin: 0 auto;
     padding-top: 50px;
+    position: relative;
   }
 
   .advantages__list-title {
@@ -126,6 +128,7 @@ margin: 0 auto;
     height: 481px;
     margin: 0 auto;
     position: absolute;
+    z-index: 2;
   }
 
   .advantages__list-item {
@@ -142,7 +145,21 @@ margin: 0 auto;
   }
 }
 
+@media (max-width: 1199px) and (min-width: 661px) {
+  .advantages::before {
+    height: 103px;
+  }
+}
+
+
 @media (min-width: @desktop-width) {
+  .advantages {
+    &::before{
+      height: 125px;
+      z-index: initial;
+    }
+  }
+
   .advantages__iphone {
     display: none;
   }
@@ -151,43 +168,65 @@ margin: 0 auto;
     display: flex;
     text-align: center;
     margin: 0 auto;
+    max-width: 960px;
+    position: static;
+    &::before {
+      display: none;
+    }
+  }
+
+  .advantages__list-title {
+    font-size: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 6px 30px 10px;
+  }
+
+  .advantages__list-description {
+    font-size: 18px;
+line-height: 30px;
+padding: 0 22px;
   }
 
   .advantages__list-item {
+    margin-left: initial;
     width: 300px;
+        padding: 0 14px;
   }
 
   .advantages__list-item--1::before {
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
     content: "";
     display: block;
-    top: 0;
+        top: -22px;
     left: 0;
     width: 292px;
     height: 302px;
     margin: 0 auto;
+    position: relative;
   }
 
   .advantages__list-item--2::before {
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
     content: "";
     display: block;
-    top: 0;
+      top: -22px;
     left: 0;
     width: 292px;
     height: 302px;
     margin: 0 auto;
+    position: relative;
   }
 
   .advantages__list-item--3::before {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
     content: "";
     display: block;
-    top: 0;
+        top: -22px;
     left: 0;
     width: 292px;
     height: 302px;
     margin: 0 auto;
-    position: static;
+    position: relative;
   }
 }
