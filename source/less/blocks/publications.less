@@ -1,5 +1,6 @@
 .publications {
   overflow: hidden;
+      margin-bottom: 23px;
 }
 
 .publications__list {
@@ -22,12 +23,15 @@
   max-width: 280px;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .publications__author {
   font-size: 14px;
-  line-height: 24px;
-  font-weight: 600;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 17px 0px 0px -2px;
 }
 
 .publications__panorama {
@@ -40,8 +44,7 @@
   line-height: 24px;
   text-transform: uppercase;
   opacity: 0.5;
-  margin: 14px;
-
+  margin: 17px 0 0 2px;
 }
 
 .publications__comment {
@@ -49,6 +52,7 @@
   line-height: 24px;
   color: @background-color;
       width: 100%;
+      margin: 0px 0px 10px 0;
 }
 
 .publications__button {
@@ -61,7 +65,7 @@
   border: none;
   padding: 0;
   background-color: #f2f2f2;
-  margin-right: 20px;
+margin-right: 17px;
 }
 
 .publications__like {
@@ -77,13 +81,6 @@
   box-sizing: border-box;
 }
 
-.subheading p {
-  font-size: 14px;
-  line-height: 30px;
-  color: @background-color;
-  text-align: center;
-  font-weight: 400;
-}
 
 .publications__image {
   display: block;
@@ -159,7 +156,7 @@ margin-right: 20px;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: @desktop-width) {
   .publications__list {
 width: 960px;
     margin: 0 auto;
