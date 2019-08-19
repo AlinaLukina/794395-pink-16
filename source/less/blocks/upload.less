@@ -93,9 +93,6 @@ font-weight: 700;
     padding-bottom: 20px;
 }
 
-.upload__filters-row--1 {
-order: 2;
-}
 .upload__icon--1 {
 fill: #b5b9be;
 }
@@ -117,6 +114,22 @@ height: 30px;
 }
 
 @media (min-width: @tablet-width) {
+.upload {
+  padding-top: 58px;
+      padding-bottom: 37px;
+
+}
+
+.upload__icon {
+  width: 23px;
+      height: 25px;
+      fill: #d22856;
+      &--3 {
+        width: 18px;
+height: 18px;
+      }
+}
+
   .upload__filters-scale {
     position: relative;
     width: 200px;
@@ -139,11 +152,23 @@ height: 30px;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-size: contain;
+    &--1{
+        left: 142px;
+    }
+    &--2{
+        left: 20px;
+    }
+    &--3 {
+            left: 97px;
+    }
   }
 
   .upload__wrapper {
     display: flex;
     justify-content: space-between;
+    width: 620px;
+overflow: hidden;
+margin: 0 auto;
   }
 
   .upload__filters::after {
@@ -156,22 +181,40 @@ height: 30px;
 
   .upload__filters {
     display: block;
+    width: initial;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 49px;
   }
 
   .upload__filters-row {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
     border-bottom: 2px solid #dddfe0;
-    padding-bottom: 20px;
+    margin-bottom: 18px;
+    padding-top: 6px;
+    padding-bottom: 18px;
   }
 
   .upload__filters-icon {
-    margin-right: 35px;
+    margin-right: 25px;
+height: initial;
+    margin-left: 15px;
   }
 
   .upload__image-picture {
     width: 300px;
+  }
+
+  .upload__buttons {
+        width: 255px;
+  }
+  .upload__buttons-submit {
+        width: 260px;
+            margin-bottom: 27px;
+  }
+  .upload__buttons-reset {
+    width: 260px;
   }
 }
 
@@ -179,13 +222,50 @@ height: 30px;
   .upload__image-picture {
     width: 300px;
   }
+.upload__icon {
+  width: 53px;
+height: 44px;
+&--3 {
+  width: 35px;
+height: 40px;
+margin-left: 9px;
+}
+}
+.upload__filters-scale {
+      margin-bottom: 10px;
+          width: 290px;
+}
 
+.upload__filters-icon {
+  margin: 0;
+      padding-right: 45px;
+}
+.upload__filters-row {
+  padding: 0;
+margin-bottom: 23px;
+}
   .upload {
     background-color: #f2f2f2;
-padding: 55px 80px;
+padding: 55px 60px 37px 66px;
 -webkit-box-sizing: border-box;
 box-sizing: border-box;
 width: 940px;
 margin: 0 auto;
+    margin-bottom: 95px;
+  }
+  .upload__wrapper {
+        width: 820px;
+  }
+  .upload__filters {
+    width: 475px;
+        margin-bottom: 125px;
+  }
+  .upload__buttons {
+    width: 475px;
+margin: 0px 40px;
+display: flex;
+padding: 0 45px;
+box-sizing: border-box;
+justify-content: space-between
   }
 }

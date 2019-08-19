@@ -64,9 +64,11 @@ margin-top: 45px;
   }
 
   .lead__description--photo {
-    font-size: 14px;
-width: 490px;
-padding-top: 37px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 490px;
+    padding-top: 37px;
+    font-weight: 500;
   }
 
   .lead__description--offer {
@@ -95,6 +97,10 @@ line-height: 46px;
 }
 
 @media (min-width: @desktop-width) {
+.lead--photo {
+  margin-bottom: 90px;
+}
+
   .lead__description {
     font-size: 50px;
     line-height: 60px;
@@ -119,5 +125,13 @@ line-height: 46px;
   .lead__description--offer {
     margin: 0px 100px 0px 93px;
     line-height: 60px;
+  }
+
+  .lead__description--photo {
+    font-size: 19px;
+width: auto;
+padding: 0px 295px;
+line-height: 30px;
+margin-top: 90px;
   }
 }
