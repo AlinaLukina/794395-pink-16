@@ -13,9 +13,8 @@
   text-align: center;
   padding-top: 40px;
   background-color: #f2f2f2;
-  padding-left: 30px;
-  padding-right: 29px;
-  padding-bottom: 40px;
+  padding-left: 37px;
+      padding-right: 39px;
   width: 100%;
 }
 
@@ -26,20 +25,35 @@
   list-style: none;
   padding-left: 20px;
   padding-right: 20px;
+      padding-top: 5px;
 }
 
 @media (min-width: @tablet-width) {
   .form-skills {
     background-color: initial;
     border: 2px solid #e5e5e5;
-    margin: 0 20px 60px;
+    max-width: 620px;
+    margin: 0 auto;
+      margin-top: 54px;
     width: 100%;
+    padding-bottom: 3px;
+margin-bottom: 56px;
   }
 
   .form-skills__legend {
     padding: 0;
     background-color: initial;
     width: initial;
-    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+.form-skills {
+  max-width: 960px;
+}
+
+  .form-skills__list {
+    display: flex;
+flex-wrap: wrap;
   }
 }

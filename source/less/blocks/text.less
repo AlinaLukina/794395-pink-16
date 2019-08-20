@@ -1,20 +1,23 @@
 .text {
-  margin-bottom: 50px;
+  margin-bottom: 49px;
+      border: none;
+      padding: 0;
+      margin-top: 40px;
 
 }
 
 .text__legend {
-  margin: 20px auto;
+    margin: 18px 0;
   text-align: center;
 }
 
 .text__texarea {
   width: 100%;
   border: none;
-  padding: 20px;
+    padding: 15px 10px 0px 17px;
   box-sizing: border-box;
   margin: 0;
-  height: 197px;
+  min-height: 197px;
   display: block;
 }
 
@@ -24,33 +27,10 @@
 
 .text__texarea::placeholder {
   color: @background-color;
-}
-
-.text__btn {
-  margin: 0 auto;
-  display: block;
-  border: none;
-  padding: 0;
-  width: 280px;
-  height: 63px;
-  background-color: #2aab6d;
-  color: #ffffff;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  border-radius: 2px;
-}
-
-.text__paragraph {
-  text-align: center;
+  font-size: 18px;
   line-height: 30px;
-  color: @background-color;
 }
 
-.text__paragraph span {
-  color: #d4345f;
-  font-weight: 700;
-}
 
 @media (min-width: @tablet-width) {
   .text {
@@ -59,16 +39,34 @@
     margin: 0 20px 60px;
     padding: 0 62px 52px;
     width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+    box-sizing: border-box;
+        margin-bottom: 66px;
   }
 
   .text__legend {
     padding: 0;
     background-color: initial;
     width: initial;
-    margin-bottom: 50px;
+        margin-bottom: 38px;
   }
 
-  .text__btn {
+  .form__btn {
     margin: 0;
+  }
+
+  .text__texarea {
+    padding: 15px 10px 0px 17px;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+min-height: 190px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .text {
+        max-width: 960px;
   }
 }
