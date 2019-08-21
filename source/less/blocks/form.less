@@ -1,3 +1,96 @@
+.form__fail {
+  display: none;
+  position: absolute;
+    top: -232px;
+  left: 0;
+  z-index: 2;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+  padding: 23px 20px 50px;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.35);
+  margin: 0 auto;
+  text-align: center;
+}
+.form__fail__header {
+  line-height: 24px;
+  font-size: 18px;
+  color: #000000;
+    font-weight: 800;
+        margin: 18px 0 24px;
+}
+
+.form__fail__text {
+  line-height: 24px;
+  color: @background-color;
+      margin: 14px 0 39px;
+}
+
+.form__fail__btn {
+  background-color: #2aab6d;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 800;
+  width: 280px;
+  height: 63px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: none;
+}
+
+.form__success {
+  display: none;
+  position: absolute;
+  top: 265px;
+  left: 0;
+  z-index: 2;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.35);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form__success__header {
+  line-height: 24px;
+  font-size: 18px;
+  color: #000000;
+    font-weight: 800;
+        margin: 18px 0 25px;
+}
+
+.form__success__text {
+  line-height: 24px;
+  color: @background-color;
+  padding: 0px 20px;
+margin: 14px 0 30px;
+}
+
+.form__success__wrapper {
+  background-color: #f2f2f2;
+  padding: 48px 20px;
+  box-sizing: border-box;
+}
+
+.form__success__btn {
+  background-color: #2aab6d;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 800;
+  width: 280px;
+  height: 63px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: none;
+}
+
 .form__main {
   margin-bottom: 55px;
 }
@@ -109,8 +202,9 @@
 
 .form__fieldset--contacts  {
   border: none;
-      margin-top: 15px;
-          margin-bottom: 25px;
+  max-width: 320px;
+  margin: 15px auto 25px;
+          position: relative;
 }
 
 .form__fieldset--app {
@@ -159,6 +253,7 @@ margin: 0 20px 60px;
 
   .form__identity {
     margin-bottom: 0;
+        max-width: 660px;
   }
 
   .form__footer {

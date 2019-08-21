@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
-  <link type="text/javascript" href="js/menu.js">
+  <script src="js/picturefill.js"></script>
 </head>
 
 <body>
@@ -54,7 +54,7 @@
     <section class="form">
       <div class="form__wrapper">
 
-        <form class="form__main" class="" action="#" method="post">
+        <form class="form__main" action="#" method="post">
           <div class="form__fieldset form__header container form__fieldset--header">
           <h2 class="visually-hidden">Заполните форму</h2>
           <fieldset class="form__fieldset form__identity form-id">
@@ -69,6 +69,7 @@
 
       <fieldset class="form__fieldset form-skills form__fieldset--skills">
         <legend class="form__legend form-skills__legend">Ваши безбашенные достижения в путешествии</legend>
+        <div class="form-skills__wrapper">
         <ul class="form-skills__list skills-list">
           <li class="skills-list__item">
             <input class="skills-list__input" type="checkbox" name="selfie" value="" id="selfie" checked>
@@ -90,6 +91,7 @@
             <input class="skills-list__input" type="checkbox" name="hotel" value="" id="hotel">
             <label class="skills-list__label" for="hotel">Разгромил отель</label></li>
         </ul>
+        </div>
       </fieldset>
 
       <fieldset class="form__fieldset form__contact-info contact-info form__fieldset--contacts">
@@ -101,7 +103,20 @@
           <p class="form__fieldset__paragraph"><span class="contact-info__span contact-info__mail"> <input type="email" name="email" placeholder="Введите почту *" id="email"> </span>
             <label for="email">Адрес почты</label>
           </p>
+          <div class="form__fail">
+            <p class="form__fail__header">Что-то пошло не так!</p>
+            <p class="form__fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="form__fail__btn" type="button" name="button">ок</button>
+          </div>
 
+          <div class="form__success">
+            <p class="form__success__header">Ваша заявка отправлена</p>
+            <p class="form__success__text">Спасибо за ваше участие, ваша заявка уже поступила к нам.
+              В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+            <div class="form__success__wrapper">
+              <button class="form__success__btn" type="button" name="button">закрыть окно</button>
+            </div>
+          </div>
       </fieldset>
 
       <fieldset class="form__fieldset form__travel-app travel-app form__fieldset--app">
@@ -129,9 +144,8 @@
 
       </fieldset>
       <div class="container form__footer">
-        <button class="form__btn text__btn" type="submit" name="button" value="отправить">Отправить форму</button>
-
-        <p class="form__paragraph text__paragraph">
+        <button class="form__btn" type="submit" name="button" value="отправить">Отправить форму</button>
+        <p class="form__paragraph">
           <span>*</span> — обязательные <span class="form__paragraph__extra">для заполнения</span> поля
         </p>
       </div>
@@ -143,12 +157,12 @@
     <div class="container container--main">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo logo-footer">
-          <picture>
             <a href="index.html">
+          <picture>
               <source class="logo-footer__image" media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
               <img class="logo-footer__image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="pink-logotype">
-            </a>
           </picture>
+            </a>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -180,7 +194,7 @@
             <li class="social__item">
               <a class="social__link social__link-youtube" href="#">
                 <span class="visually-hidden">YouTube</span>
-                <svg class="social__svg" class="social__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96"
+                <svg class="social__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96"
                   xml:space="preserve">
                   <path fill="#d22856" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
                 </svg>

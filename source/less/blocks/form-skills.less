@@ -26,7 +26,11 @@
   padding-left: 20px;
   padding-right: 20px;
       padding-top: 5px;
+      max-width: 320px;
+      margin: 0 auto;
 }
+
+
 
 @media (min-width: @tablet-width) {
   .form-skills {
@@ -38,6 +42,10 @@
     width: 100%;
     padding-bottom: 3px;
 margin-bottom: 56px;
+  }
+
+  .form-skills__list {
+    max-width: 660px
   }
 
   .form-skills__legend {
@@ -55,5 +63,6 @@ margin-bottom: 56px;
   .form-skills__list {
     display: flex;
 flex-wrap: wrap;
+    max-width: 940px;
   }
 }
