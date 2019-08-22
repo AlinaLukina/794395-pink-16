@@ -3,10 +3,18 @@
       margin-bottom: 23px;
 }
 
+.publications__box {
+  display: flex;
+}
+
 .publications__header {
   list-style: none;
 margin: 0;
 padding: 0;
+}
+
+.publications__wrapper {
+  display: flex;
 }
 
 .publications__list {
@@ -150,7 +158,6 @@ width: 620px;
 
   .publications__like {
     order: 3;
-    margin-left: 305px;
 margin-top: 21px;
 margin-right: 17px;
   }
@@ -189,6 +196,7 @@ margin-right: 17px;
   .publications__review{
     max-width: 300px;
     padding: 5px 25px 26px 28px;
+    min-height: 155px;
   }
 
   .publications__review--main {
@@ -197,12 +205,18 @@ margin-right: 17px;
     margin: 0 auto;
     padding: 0px 25px 15px 25px;
     min-height: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .publications__review--main .publications__wrapper {
+    order: 2;
   }
 }
 
 @media (min-width: @desktop-width) {
 .publications {
-      margin-bottom: 37px;
+    margin-bottom: 3px;
 }
 
   .publications__list {
@@ -225,23 +239,26 @@ right: 132px;
   .publications__item--main {
     width: 100%;
   }
-  .publications__review-{
-    min-width: 940px;
+  .publications__review {
+
     margin: 0 auto;
+    min-height: 155px;
   }
   .publications__review--main {
     min-width: 940px;
     margin: 0 auto;
+    min-height: initial;
   }
 
   .publications__list .publications__item:nth-of-type(3n) {
     margin-right: 0;
     margin-left: 0;
-        margin-bottom: 31px;
+    margin-bottom: 56px;
   }
 
   .publications__item {
 margin-right: 20px;
+display: block;
    }
 
 }

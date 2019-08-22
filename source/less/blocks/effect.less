@@ -66,12 +66,29 @@ text-align: left;
 @media (min-width: @desktop-width) {
   .effect {
     background-color: #f2f2f2;
-        padding-top: 145px;
-            padding-bottom: 115px;
+    padding-top: 145px;
+    padding-bottom: 115px;
   }
 
+  .effect__clock {
+    background-image: url(../img/timer.png);
+  background-size: contain;
+  background-position: 69% 24%;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 345px;
+  position: absolute;
+  top: -75px;
+  left: -16px;
+  }
+
+  .effect__wrapper {
+    position: relative;
+  }
+
+
 .effect__main {
-  padding-left: 52px;
+padding-left: 355px;
 }
 
   .effect__main-description {
@@ -85,10 +102,13 @@ margin-bottom: 35px;
   font-size: 18px;
   }
   .effect__clock-picture {
-    font-size: 121px;
-    line-height: 219px;
-    margin-left: 14px;
-    padding: 18px 38px 35px 42px;
-    margin-right: 42px;
+    position: absolute;
+    font-size: 120px;
+        line-height: 219px;
+        margin-left: 14px;
+        padding: 0px 38px 4px 39px;
+        margin-right: 42px;
+        margin-top: 64px;
+        margin-left: 31px;
   }
 }

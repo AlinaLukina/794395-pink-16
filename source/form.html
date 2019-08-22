@@ -59,11 +59,11 @@
           <h2 class="visually-hidden">Заполните форму</h2>
           <fieldset class="form__fieldset form__identity form-id">
             <p class="form-id__block"><label for="surname">Фамилия</label>
-              <input type="text" name="Фамилия" id="surname" placeholder="Укажите фамилию *"></p>
+              <input class="form-id__text" type="text" name="Фамилия" id="surname" placeholder="Укажите фамилию *"></p>
             <p class="form-id__block"><label for="name">Имя</label>
-              <input type="text" name="Имя" id="name" placeholder="Введите ваше имя *"></p>
+              <input class="form-id__text" type="text" name="Имя" id="name" placeholder="Введите ваше имя *"></p>
             <p class="form-id__block"><label for="f-name">Отчество</label>
-              <input type="text" name="Отчество" id="f-name" placeholder="Ну и отчество тоже"></p>
+              <input class="form-id__text" type="text" name="Отчество" id="f-name" placeholder="Ну и отчество тоже"></p>
           </fieldset>
       </div>
 
@@ -97,12 +97,16 @@
       <fieldset class="form__fieldset form__contact-info contact-info form__fieldset--contacts">
 
           <legend class="form__legend contact-info__legend">Контактная информация</legend>
-          <p class="form__fieldset__paragraph"><span class="contact-info__span contact-info__phone"> <input type="tel" name="phone-number"  placeholder="Номер, пожалуйста" id="phone"> </span>
+          <div class="form__contact-info__wrapper">
+          <p class="form__fieldset__paragraph"><span class="contact-info__span contact-info__phone">
+             <input  class="contact-info__text" type="tel" name="phone-number"  placeholder="Номер, пожалуйста" id="phone"> </span>
             <label for="phone">номер телефона</label>
           </p>
-          <p class="form__fieldset__paragraph"><span class="contact-info__span contact-info__mail"> <input type="email" name="email" placeholder="Введите почту *" id="email"> </span>
+          <p class="form__fieldset__paragraph"><span class="contact-info__span contact-info__mail">
+             <input class="contact-info__text" type="email" name="email" placeholder="Введите почту *" id="email"> </span>
             <label for="email">Адрес почты</label>
           </p>
+          </div>
           <div class="form__fail">
             <p class="form__fail__header">Что-то пошло не так!</p>
             <p class="form__fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>

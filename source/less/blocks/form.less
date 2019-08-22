@@ -183,14 +183,12 @@ margin: 14px 0 30px;
   width: 100%;
   height: 60px;
   border: 2px solid #e5e5e5;
-  padding: 0;
 }
 
 .form__contact-info::placeholder {
   font-size: 18px;
   line-height: 30px;
   color: #283645;
-  padding-left: 23px;
   box-sizing: border-box;
 }
 
@@ -315,6 +313,11 @@ padding: 0;
 }
 
 @media (min-width: @desktop-width) {
+.form__contact-info__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
   .form__wrapper {
     display: flex;
     flex-wrap: wrap;
