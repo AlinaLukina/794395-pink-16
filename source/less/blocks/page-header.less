@@ -4,6 +4,16 @@
   width: 100%;
 }
 
+.page-header--closed {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+background-position: top;
+}
+
+.page-header--opened {
+  background-color: transparent;
+}
+
 .page-header__wrapper {
   min-height: 69px;
   display: flex;
@@ -51,11 +61,21 @@
   .page-header__toggle{
     height: initial;
   }
+  .page-header--closed {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
 }
 
 @media (max-width: @mobile-tablet) {
   .page-header__toggle--closed + .main-nav {
     display: none;
+  }
+}
+
+@media (max-width: 659px) and (min-width: 321px) {
+  .page-header--closed {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    
   }
 }
 
@@ -88,5 +108,8 @@ height: auto;
 width: 150px;
 padding-left: 8px;
 padding-bottom: 15px;
+}
+.page-header--closed {
+  background-image: initial;
 }
 }

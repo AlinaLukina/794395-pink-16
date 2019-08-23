@@ -38,7 +38,7 @@ padding: 0;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 20px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .publications__author {
@@ -72,8 +72,8 @@ padding: 0;
 .publications__button {
   background-image: url(../img/icon-heart.svg);
   background-size: contain;
-  width: 12px;
-  height: 24px;
+  width: 14px;
+  height: 25px;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -122,11 +122,20 @@ line-height: 35px;
 }
 
 @media (min-width: 660px) {
+
+.publications__comment--oneline {
+  margin-top: -10px;
+}
+
+.publications__comment--oneline + .publications__wrapper {
+  align-items: flex-end;
+}
+
 .publications__sticker {
   top: 55px;
 }
   .publications {
-    margin-bottom: 70px;
+    margin-bottom: 45px;
   }
 .publications__photo {
   margin: 0 auto;
@@ -143,6 +152,15 @@ width: 620px;
 
   .publications__time {
     margin: 17px 0 0 5px;
+  }
+
+  .publications__button {
+    order: 2;
+      margin: 0;
+  }
+
+  .publications__like {
+    order: 1;
   }
 
 .publications__review--main {
@@ -169,6 +187,10 @@ margin-right: 17px;
 
   .publications__comment {
     order: 5;
+  }
+
+  .publications__wrapper {
+    width: initial;
   }
 }
 
@@ -211,6 +233,11 @@ margin-right: 17px;
 
   .publications__review--main .publications__wrapper {
     order: 2;
+  }
+
+  .publications__wrapper {
+    width: 240px;
+    justify-content: space-between;
   }
 }
 

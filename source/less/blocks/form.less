@@ -133,7 +133,7 @@ margin: 14px 0 30px;
   display: none;
 }
 
-.form__paragraph span {
+.form__star {
   color: #d4345f;
   font-weight: 700;
 }
@@ -175,21 +175,24 @@ margin: 14px 0 30px;
 }
 
 
-.form__contact-info {
-  padding: 0 20px;
-}
+
 
 .form__contact-info input {
   width: 100%;
   height: 60px;
   border: 2px solid #e5e5e5;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
 }
 
-.form__contact-info::placeholder {
+.form__contact-info input::placeholder {
   font-size: 18px;
   line-height: 30px;
   color: #283645;
   box-sizing: border-box;
+padding: 0;
 }
 
 .form__travel-app {
@@ -202,6 +205,8 @@ margin: 14px 0 30px;
   border: none;
   max-width: 320px;
   margin: 15px auto 25px;
+      position: relative;
+      padding: 0 20px;
           position: relative;
 }
 
@@ -234,6 +239,10 @@ margin: 0 20px 60px;
     margin: 0 20px;
     padding: 35px 60px;
     margin-bottom: 60px;
+  }
+
+  .form__contact-info input {
+    padding: 0 17px;
   }
 
     .form__fieldset__paragraph {
@@ -298,7 +307,7 @@ margin-top: 50px;
 
   .form__fieldset--header {
 order: 1;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     max-width: 620px;
 padding: 0;
   }
@@ -328,36 +337,56 @@ padding: 0;
 
   .form__wrapper form {
     width: 100%;
+        margin-bottom: 31px;
   }
 
   .form__fieldset--app {
-    max-width: 470px;
+max-width: 432px;
 margin-top: 0;
 box-sizing: border-box;
-margin-left: 10px;
+margin-left: 5px;
+margin-top: 18px;
   }
 
   .form__fieldset--header {
         width: 50%;
   }
 
+  .form__fieldset__paragraph label {
+    margin-bottom: 0;
+  }
+
   .form__fieldset--contacts {
-    max-width: 960px;
+    max-width: 940px;
+    margin-top: 0;
+padding: 18px 60px 0;
 display: flex;
   }
 
   .form__fieldset__paragraph {
     display: flex;
     width: 374px;
+        margin-bottom: 16px;
   }
 
   .form__identity {
     max-width: 470px;
     box-sizing: border-box;
-    margin-right: 34px;
+    margin-right: 50px;
+    margin-top: 33px;
   }
 
   .form__footer {
-        max-width: 960px;
+        max-width: 940px;
+        margin-bottom: 0;
+  }
+
+  .form__paragraph {
+        margin: 17px 0;
+  }
+  .form__paragraph__extra {
+    display: inline;
+color: #283645;
+font-weight: 400;
   }
 }
