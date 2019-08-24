@@ -58,7 +58,7 @@
           <li class="app__item">
             <a href="https://www.apple.com/ru/itunes/">
 
-              <img class="app__item-apple" src="img/logo-apple.svg" width="47" height="56" alt="apple-application">
+              <img class="app__item-apple" src="img/logo-apple.svg" width="47" height="59" alt="apple-application">
             </a>
           </li>
           <li class="app__item">
@@ -98,7 +98,7 @@
           <li class="advantages__list-item advantages__list-item--2">
             <h3 class="advantages__list-title">Меняет мир вокруг</h3>
             <p class="advantages__list-description">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект
             </p>
           </li>
           <li class="advantages__list-item advantages__list-item--3">
@@ -117,11 +117,11 @@
             <span class="effect__clock-picture">24</span>
           </div>
           <div class="effect__main">
-            <h2 class="effect__main-header">Эффект на 24 часа!</h2>
+            <h2 class="effect__main-header">Эффект на&nbsp;24 часа!</h2>
             <p class="effect__main-description">
               Британские ученые провели исследования
-              и доказали, что положительный эффект
-              от использования приложения длится
+              и доказали, что&nbsp;положительный эффект
+              от&nbsp;использования приложения длится
               целые сутки!
             </p>
             <a class="effect__main-link" href="#">Узнать больше об исследовании</a>
@@ -170,13 +170,13 @@
             <p class="table__price">9,99 USD</p>
           </th>
         </tr>
-        <tr class="table__row table-row table-row--content">
+        <tr class="table__row table-row">
           <td class="table-row__filter table-row__filter--tablet">Розовый фильтр</td>
           <td class="table-row__filter table-row__filter--check table-row__check"><span class="table-row__mob">Розовый фильтр</span><span class="visually-hidden">check</span></td>
           <td class="table-row__filter table-row__filter--check table-row__check"><span class="table-row__mob">Розовый фильтр</span><span class="visually-hidden">check</span></td>
           <td class="table-row__filter table-row__filter--check table-row__check"><span class="table-row__mob">Розовый фильтр</span><span class="visually-hidden">check</span></td>
         </tr>
-        <tr class="table__row table-row table-row--content">
+        <tr class="table__row table-row">
           <td class="table-row__filter table-row__filter--tablet">Смайлики</td>
           <td class="table-row__filter table-row__filter--cross table-row__cross"><span class="table-row__mob">Смайлики</span><span class="visually-hidden">cross</span></td>
           <td class="table-row__filter table-row__filter--check table-row__check"><span class="table-row__mob">Смайлики</span><span class="visually-hidden">check</span></td>
@@ -228,9 +228,12 @@
       </div>
       <div class="contacts__map">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
-          <img src="img/bg-map-mobile@1x.png" alt="карта">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x ,img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x ,img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x ,img/bg-map-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="карта">
         </picture>
       </div>
     </section>

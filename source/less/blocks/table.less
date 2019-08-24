@@ -73,12 +73,12 @@ text-transform: uppercase;
 
   .table__tariff {
     font-size: 17px;
-      line-height: 27px;
+    line-height: 28px;
   }
 
   .table__price {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .table__hit {
@@ -94,7 +94,7 @@ left: 8px;
 
   .table__head {
     width: 155px;
-    padding: 12px 0;
+    padding: 12px 0 10px;
   }
 
   .table__head--standard::before {
@@ -117,7 +117,7 @@ left: 8px;
   }
 
   .table__head {
-        padding: 20px 0;
+    padding: 22px 0;
   }
   .table__tariff {
     font-size: 18px;
@@ -127,4 +127,21 @@ left: 8px;
     font-size: 24px;
     line-height: 30px;
   }
+
+  .table__head--standard::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 74px;
+    height: 74px;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+  }
+
+  .table__hit {
+    top: 15px;
+    left: 11px;
+}
 }

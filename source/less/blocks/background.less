@@ -19,7 +19,12 @@
     position: relative;
     min-height: 618px;
     padding: 0 20px;
+
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
   }
+}
 }
 
 @media (min-width: @desktop-width) {
@@ -31,5 +36,9 @@
     min-height: 745px;
     position: relative;
     box-sizing: border-box;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }

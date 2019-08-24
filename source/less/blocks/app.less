@@ -8,6 +8,11 @@
   min-height: 207px;
   padding-top: 391px;
   background-position-y: -67px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: contain;
+  }
 }
 
 .app__header {
@@ -26,6 +31,11 @@
   height: 286px;
   bottom: 240px;
   left: 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/iphone-hand-mobile@2x.png);
+        background-size: contain;
+    }
 }
 
 .app__link {
@@ -97,6 +107,11 @@
     width: 660px;
     height: 545px;
     position: absolute;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/iphone-hand-tablet@2x.png");
+            background-size: cover;
+      }
   }
 
   .app__description {
@@ -141,6 +156,10 @@ padding: 0 47px;
     height: 645px;
     position: absolute;
     margin: 0;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/iphone-hand-desktop@2x.png);
+      }
   }
 
 .app__description {
