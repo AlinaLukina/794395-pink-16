@@ -7,7 +7,7 @@
 .page-header--closed {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-background-position: top;
+  background-position: top;
 }
 
 .page-header--opened {
@@ -19,7 +19,7 @@ background-position: top;
   display: flex;
   justify-content: space-between;
   align-items: center;
-      padding-left: 20px;
+  padding-left: 20px;
 }
 
 .page-header__toggle {
@@ -39,7 +39,7 @@ background-position: top;
   background-image: url("../img/icon-menu-burger.svg");
   background-repeat: no-repeat;
   background-position: center;
-      background-color: transparent;
+  background-color: transparent;
 }
 
 .page-header__toggle--opened {
@@ -55,12 +55,15 @@ background-position: top;
     height: auto;
     padding-bottom: 15px;
   }
+
   .page-header__wrapper {
-        min-height: 110px;
+    min-height: 110px;
   }
-  .page-header__toggle{
+
+  .page-header__toggle {
     height: initial;
   }
+
   .page-header--closed {
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
@@ -75,7 +78,6 @@ background-position: top;
 @media (max-width: 659px) and (min-width: 321px) {
   .page-header--closed {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    
   }
 }
 
@@ -85,7 +87,7 @@ background-position: top;
     min-height: 110px;
     position: absolute;
     z-index: 50;
-        background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.3);
     background-size: 2560px 853px;
   }
 
@@ -95,21 +97,22 @@ background-position: top;
     justify-content: space-between;
     align-items: center;
     width: initial;
-      padding-left: 0;
+    padding-left: 0;
   }
 
   .page-header__toggle {
     display: none;
   }
 
-.page-header__logo img {
-  display: block;
-height: auto;
-width: 150px;
-padding-left: 8px;
-padding-bottom: 15px;
-}
-.page-header--closed {
-  background-image: initial;
-}
+  .page-header__logo img {
+    display: block;
+    height: auto;
+    width: 150px;
+    padding-left: 8px;
+    padding-bottom: 15px;
+  }
+
+  .page-header--closed {
+    background-image: initial;
+  }
 }

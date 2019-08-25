@@ -11,7 +11,7 @@
 .table-row__cross {
   display: none;
   margin-top: 1px;
-border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .table-row__filter--check {
@@ -28,8 +28,8 @@ border-bottom: 1px solid #e5e5e5;
   padding-left: 22px;
   box-sizing: border-box;
   border-top: 1px solid #e5e5e5;
-border-left: 1px solid #e5e5e5;
-border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
 }
 
 .table-row__filter--check::after {
@@ -60,11 +60,11 @@ border-right: 1px solid #e5e5e5;
   height: 59px;
   display: flex;
   align-items: center;
-    padding-left: 22px;
+  padding-left: 22px;
   box-sizing: border-box;
   border-top: 1px solid #e5e5e5;
-border-left: 1px solid #e5e5e5;
-border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
 }
 
 .table-row__filter--cross::after {
@@ -72,7 +72,7 @@ border-right: 1px solid #e5e5e5;
   position: absolute;
   width: 30px;
   height: 50px;
-  background-image: url(../img/icon-no.svg);
+  background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 27px 27px;
@@ -99,7 +99,6 @@ border-right: 1px solid #e5e5e5;
 }
 
 @media (min-width: @tablet-width) {
-
   .table-row__mob {
     display: none;
   }
@@ -145,32 +144,30 @@ border-right: 1px solid #e5e5e5;
     padding: 10px 0;
   }
 
-  .table-row__filter::after,
-  .table-row__filter--comments::after {
+  .table-row__filter--comments::after,
+  .table-row__filter::after {
     display: none;
   }
 
-  .table-row__filter--tablet{
+  .table-row__filter--tablet {
     display: table-cell;
     background-color: #ffffff;
     height: 27px;
     padding-left: 16px;
     width: 138px;
-padding-top: 7px;
+    padding-top: 7px;
     font-size: 14px;
-line-height: 30px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .table-row__filter {
     width: 235px;
-  padding: 13px 0;
-      line-height: 35px;
-      padding-left: 22px;
+    padding: 13px 0;
+    line-height: 35px;
+    padding-left: 22px;
     box-sizing: border-box;
     font-size: 18px;
-
   }
-
 }
