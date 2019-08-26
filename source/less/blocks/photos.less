@@ -1,11 +1,10 @@
 .photos {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
   background-color: #283645;
   height: 170px;
   color: #ffffff;
   background-repeat: no-repeat;
-  background-position: -10% 23%;
+  background-position: 50% 23%;
 }
 
 .photos__title {
@@ -16,6 +15,13 @@
   font-size: 24px;
   padding-top: 27px;
   line-height: 31px;
+}
+
+@media (max-width: 659px) and (min-width: 321px) {
+  .photos {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 12%;
+  }
 }
 
 @media (min-width: @tablet-width) {

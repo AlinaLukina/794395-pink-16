@@ -24,11 +24,11 @@
   color: #ffffff;
   font-weight: 300;
   background-color: transparent;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   padding: 0 40px 30px;
   line-height: 30px;
+  margin: 0
 }
 
 .lead__description--photo {
@@ -36,9 +36,9 @@
   line-height: 30px;
   width: 280px;
   margin: 0 auto;
-  padding: 0 20px;
   box-sizing: border-box;
-  padding-top: 44px;
+  padding: 44px 18px 0;
+  font-weight: 400;
 }
 
 .lead__description--offer {
@@ -51,7 +51,24 @@
   background-position: 50% 23%;
   background-size: cover;
   min-height: 170px;
+  margin-bottom: 40px;
   display: flex;
+}
+
+@media (max-width: 659px) and (min-width: 321px) {
+  .lead--form  {
+  background-image: url(../img/bg-back-tablet@1x.jpg);
+   background-color: #283645;
+   background-position: 50% 13%;
+   min-height: 170px;
+   margin-bottom: 40px;
+   display: flex;
+   background-size: inherit;
+  }
+
+  .lead__description--form  {
+    margin: initial;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -84,7 +101,7 @@
     font-size: 50px;
     color: #ffffff;
     font-weight: 300;
-    margin: 0;
+    margin: initial;
     padding: 0 40px 17px;
     line-height: 60px;
   }
