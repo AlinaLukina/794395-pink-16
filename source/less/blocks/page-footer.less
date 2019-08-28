@@ -14,6 +14,22 @@
   margin-bottom: 33px;
 }
 
+.page-footer__logo svg {
+  fill: #283645;
+  &:hover {
+    fill: @purple;
+  }
+  &:active,
+  &:focus {
+    opacity: 0.3;
+    fill: @background-color;
+  }
+}
+
+.page-footer__logo--desktop {
+  display: none;
+}
+
 .page-footer__social {
   margin-bottom: 30px;
 }
@@ -85,6 +101,14 @@
 
   .page-footer__index {
     padding: 0;
+  }
+
+  .page-footer__logo--desktop {
+    display: block;
+  }
+
+  .page-footer__logo--mobile {
+    display: none;
   }
 
   .page-footer__social {

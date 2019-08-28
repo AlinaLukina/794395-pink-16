@@ -8,6 +8,14 @@
 .upload__icon {
   width: 48px;
   height: 45px;
+  &:hover {
+    fill: #8d949b;
+  }
+  &:active,
+  &:focus {
+    fill: @purple;
+    outline: none;
+  }
 }
 
 .upload__filters-scale {
@@ -68,6 +76,15 @@
   color: #d22856;
   background-color: transparent;
   margin-bottom: 15px;
+  &:hover {
+    background-color: @purple;
+    color: #ffffff;
+  }
+  &:active,
+  &:focus {
+    color: #e06989;
+    background-color: @purple;
+  }
 }
 
 .upload__buttons-reset {
@@ -77,6 +94,16 @@
   border-radius: 25px;
   background-color: transparent;
   color: #dddfe0;
+  &:hover {
+    color: #b5b9be;
+    border: 3px solid #b5b9be;
+  }
+  &:active,
+  &:focus {
+    color: #cbced2;
+    background-color: #b5b9be;
+    border: 3px solid #b5b9be;
+  }
 }
 
 .upload__image-picture {
@@ -171,7 +198,7 @@
     align-items: center;
     border-bottom: 2px solid #dddfe0;
     margin-bottom: 18px;
-    padding-top: 6px;
+    padding-top: 5px;
     padding-bottom: 18px;
   }
 

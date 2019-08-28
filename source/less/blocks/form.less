@@ -27,6 +27,18 @@
   margin-bottom: 34px;
   border-radius: 2px;
   font-size: 18px;
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active,
+  &:focus {
+      background-color: #1c9b5e;
+      color: #61b98f;
+      outline: none;
+  }
+  &:disabled {
+background-color: #e5e5e5;
+  }
 }
 
 .form__paragraph {
@@ -89,6 +101,14 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+  &:hover {
+    border: 2px solid @background-color;
+  }
+  &:active,
+  &:focus {
+    border: 2px solid @purple;
+    outline: none;
+  }
 }
 
 .form__contact-info input::placeholder {

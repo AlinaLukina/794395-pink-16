@@ -45,6 +45,18 @@
   border-radius: 50%;
 }
 
+.travel-app__input + label:hover {
+  &::before {
+    border: 2px solid @background-color;
+}
+}
+.travel-app__input + label:active,
+:focus {
+  &::before {
+  border: 2px solid @purple;
+}
+}
+
 .travel-app__input:checked + label::after {
   position: absolute;
   content: "";
@@ -65,7 +77,7 @@
 
 @media (min-width: @tablet-width) {
   .travel-app__legend {
-    padding: 0;
+    padding: 0 23px;
     width: auto;
     margin-left: calc(50% - 160px);
     background-color: transparent;
@@ -94,5 +106,9 @@
 @media (min-width: @desktop-width) {
   .travel-app__item {
     padding-left: 115px;
+  }
+
+  .travel-app__legend {
+    margin-left: calc(50% - 175px);
   }
 }

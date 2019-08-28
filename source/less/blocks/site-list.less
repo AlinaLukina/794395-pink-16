@@ -17,6 +17,29 @@
   display: block;
   padding: 16px 0;
   cursor: pointer;
+  &:hover {
+    color: @purple;
+  }
+&:active,
+&:focus {
+  color: @purple;
+  opacity: 0.3;
+}
+}
+
+.site-list__item--active {
+  position: relative;
+  &::after {
+  content: "";
+  content: "";
+  top: 51px;
+  left: 0;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  color: #fff;
+}
 }
 
 @media (min-width: @desktop-width) {
@@ -30,5 +53,9 @@
 
   .site-list__item a {
     font-weight: 400;
+    &:active,
+    &:focus {
+      opacity: 0.3;
+    }
   }
 }

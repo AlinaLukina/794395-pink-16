@@ -114,15 +114,27 @@
     background-size: contain;
 
     &--left {
-      left: 129px;
-      background-image: url("../img/icon-review-arrow-left.svg");
+left: 123px;
     }
 
     &--right {
-      right: 129px;
-      background-image: url("../img/icon-review-arrow-right.svg");
+      right: 140px;
     }
   }
+
+    .review__button svg {
+      fill: @background-color;
+      opacity: 0.3;
+      &:hover {
+        fill: @background-color;
+        opacity: 0.6;
+      }
+      &active,
+      &:focus {
+        fill: @background-color;
+        opacity: 0.1;
+      }
+    }
 
   .review__id {
     display: block;
