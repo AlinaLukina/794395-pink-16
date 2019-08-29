@@ -114,7 +114,7 @@
     background-size: contain;
 
     &--left {
-left: 123px;
+      left: 123px;
     }
 
     &--right {
@@ -122,19 +122,21 @@ left: 123px;
     }
   }
 
-    .review__button svg {
+  .review__button svg {
+    fill: @background-color;
+    opacity: 0.3;
+
+    &:hover {
       fill: @background-color;
-      opacity: 0.3;
-      &:hover {
-        fill: @background-color;
-        opacity: 0.6;
-      }
-      &active,
-      &:focus {
-        fill: @background-color;
-        opacity: 0.1;
-      }
+      opacity: 0.6;
     }
+
+    &:focus,
+    &active {
+      fill: @background-color;
+      opacity: 0.1;
+    }
+  }
 
   .review__id {
     display: block;

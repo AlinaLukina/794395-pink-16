@@ -102,10 +102,6 @@
     display: none;
   }
 
-  .table__cell {
-      border: 1px solid #e5e5e5;
-  }
-
   .table-row__cross {
     background-color: #ffffff;
     background-image: url("../img/icon-no.svg");
@@ -134,7 +130,7 @@
   .table-row__filter {
     width: 155px;
     height: 43px;
-border: 0;
+    border: 0;
   }
 
   .table-row__check,
@@ -146,8 +142,7 @@ border: 0;
   .table-row__cross,
   .table-row__filter {
     border: 0;
-    padding: 10px 0;
-
+    padding: 0;
   }
 
   .table-row__filter--comments::after,
@@ -171,15 +166,14 @@ border: 0;
 @media (min-width: @desktop-width) {
   .table-row__filter {
     width: 235px;
-    padding: 13px 0;
+    padding: 0 0 0 22px;
     line-height: 35px;
-    padding-left: 22px;
     box-sizing: border-box;
     font-size: 18px;
     height: 58px;
   }
 
-    .table-row__filter--tablet {
-      width: 230px;
-    }
+  .table__head {
+    width: 235px;
+  }
 }
