@@ -85,13 +85,13 @@
       <div class="form__wrapper">
 
         <form class="form__main" action="#" method="post">
-          <div class="form__fieldset form__header container form__fieldset--header">
+          <div class="form__fieldset form__header container container--form form__fieldset--header">
             <h2 class="visually-hidden">Заполните форму</h2>
             <fieldset class="form__fieldset form__identity form-id">
               <p class="form-id__block"><label for="surname">Фамилия</label>
-                <input class="form-id__text" type="text" name="Фамилия" id="surname" placeholder="Укажите фамилию *"></p>
+                <input class="form-id__text" type="text" name="Фамилия" id="surname" placeholder="Укажите фамилию *" required></p>
               <p class="form-id__block"><label for="name">Имя</label>
-                <input class="form-id__text" type="text" name="Имя" id="name" placeholder="Введите ваше имя *"></p>
+                <input class="form-id__text" type="text" name="Имя" id="name" placeholder="Введите ваше имя *" required></p>
               <p class="form-id__block"><label for="f-name">Отчество</label>
                 <input class="form-id__text" type="text" name="Отчество" id="f-name" placeholder="Ну и отчество тоже"></p>
             </fieldset>
@@ -133,7 +133,7 @@
                 <label for="phone">номер телефона</label>
               </p>
               <p class="form__fieldset__paragraph"><span class="contact-info__span contact-info__mail">
-                  <input class="contact-info__text" type="email" name="email" placeholder="Введите почту *" id="email"> </span>
+                  <input class="contact-info__text" type="email" name="email" placeholder="Введите почту *" id="email" required> </span>
                 <label for="email">Адрес почты</label>
               </p>
             </div>
