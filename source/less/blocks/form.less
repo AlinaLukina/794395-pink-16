@@ -2,6 +2,11 @@
   margin-bottom: 55px;
 }
 
+.form__fieldset {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .form {
   margin: 0 auto;
 }
@@ -22,7 +27,7 @@
   height: 63px;
   background-color: #2aab6d;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 34px;
   border-radius: 2px;
@@ -49,9 +54,10 @@
   line-height: 30px;
   color: @background-color;
   text-transform: uppercase;
+  width: 100%;
 }
 
-.form__paragraph__extra {
+.form__extra {
   display: none;
 }
 
@@ -60,7 +66,12 @@
   font-weight: 700;
 }
 
-.form__fieldset__paragraph {
+.form__contact-info {
+  width: 100%;
+  border: none;
+}
+
+.form__fieldset-paragraph {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -72,7 +83,7 @@
   border: none;
 }
 
-.form__fieldset__paragraph input::placeholder {
+.form__fieldset-paragraph input::placeholder {
   font-size: 18px;
   line-height: 30px;
   color: @background-color;
@@ -80,13 +91,13 @@
   box-sizing: border-box;
 }
 
-.form__fieldset__paragraph span {
+.form__fieldset-paragraph span {
   display: flex;
   order: 2;
   width: 100%;
 }
 
-.form__fieldset__paragraph label {
+.form__fieldset-paragraph label {
   display: block;
   padding-left: 20px;
   box-sizing: border-box;
@@ -128,20 +139,20 @@
   box-sizing: border-box;
   margin: 0;
   background-color: #f2f2f2;
+  width: 100%;
+  border: none;
 }
 
 .form__fieldset--contacts {
   border: none;
-  max-width: 320px;
   margin: 15px auto 25px;
   position: relative;
-  padding: 0 20px;
+  padding: 0;
+  width: 100%;
 }
 
 .form__fieldset--text {
-  border: 2px solid #e5e5e5;
-  margin: 0 20px 60px;
-  padding: 0 62px 52px;
+  border: none;
 }
 
 .form__fieldset--header {
@@ -157,6 +168,7 @@
 
   .form__paragraph {
     margin: 18px 0;
+    width: auto;
   }
 
   .form__contact-info {
@@ -170,22 +182,21 @@
     padding: 12px 17px;
   }
 
-  .form__fieldset__paragraph {
+  .form__fieldset-paragraph {
     margin-bottom: 22px;
   }
 
-  .form__fieldset__paragraph span {
+  .form__fieldset-paragraph span {
     order: 0;
     margin-bottom: 10px;
   }
 
-  .form__fieldset__paragraph label {
+  .form__fieldset-paragraph label {
     margin-bottom: 5px;
   }
 
   .form__identity {
     margin-bottom: 0;
-    max-width: 660px;
   }
 
   .form__footer {
@@ -193,7 +204,6 @@
     justify-content: space-between;
     margin-bottom: 31px;
     order: 6;
-    max-width: 620px;
     padding: 0;
   }
 
@@ -203,6 +213,8 @@
   }
 
   .form__fieldset--text {
+    margin: 0 20px 60px;
+    padding: 0 62px 52px;
     order: 5;
   }
 
@@ -210,14 +222,12 @@
     order: 2;
     width: 100%;
     padding-bottom: 15px;
-    max-width: 620px;
     margin: 0 auto 56px;
   }
 
   .form__fieldset--contacts {
     order: 3;
     width: 100%;
-    max-width: 620px;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 23px 60px 0;
@@ -225,14 +235,12 @@
 
   .form__fieldset--skills {
     order: 4;
-    max-width: 620px;
     margin: 50px auto 0;
   }
 
   .form__fieldset--header {
     order: 1;
     margin-bottom: 5px;
-    max-width: 620px;
     padding: 0;
   }
 
@@ -242,7 +250,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form__contact-info__wrapper {
+  .form__contact-wrap {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -252,7 +260,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 960px;
     margin: 0 auto;
   }
 
@@ -262,7 +269,6 @@
   }
 
   .form__fieldset--app {
-    max-width: 432px;
     box-sizing: border-box;
     margin-left: 5px;
     margin-top: 18px;
@@ -272,24 +278,21 @@
     width: 50%;
   }
 
-  .form__fieldset__paragraph label {
+  .form__fieldset-paragraph label {
     margin-bottom: 0;
   }
 
   .form__fieldset--contacts {
-    max-width: 940px;
     margin-top: 0;
     padding: 18px 60px 0;
   }
 
-  .form__fieldset__paragraph {
+  .form__fieldset-paragraph {
     display: flex;
-    width: 374px;
     margin-bottom: 16px;
   }
 
   .form__identity {
-    max-width: 470px;
     box-sizing: border-box;
     margin-right: 50px;
     margin-top: 33px;
@@ -304,7 +307,7 @@
     margin: 17px 0;
   }
 
-  .form__paragraph__extra {
+  .form__extra {
     display: inline;
     color: #283645;
     font-weight: 400;

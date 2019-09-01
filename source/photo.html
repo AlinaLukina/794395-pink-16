@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,10 +7,14 @@
   <link href="css/style.min.css" rel="stylesheet">
   <script src="js/picturefill.js"></script>
 </head>
-
 <body>
   <header class="page-header">
+    <!--  page-header--closed показывает фоновое изображение в шапке закрытого меню-->
+    <!--  page-header--opened убирает фоновое изоюражение-->
     <nav class="page-header__nav main-nav main-nav--nojs">
+      <!-- main-nav--nojs показывает открытое меню при отключенном JS-->
+      <!--  main-nav--closed скрывает пункты меню-->
+      <!--  main-nav--opened показывает меню-->
       <div class="page-header__wrapper">
         <a href="index.html" class="page-header__logo">
           <svg width="146.3" height="40.375" viewBox="0 0 147 41">
@@ -39,15 +42,16 @@
         </a>
       </div>
       <button class="page-header__button" type="button">
+        <!--  page-header__toggle--closed показывает иконку "гармургера" при закрытом меню-->
+        <!--  page-header__toggle--opened показывает крестик при открытом меню-->
         <svg class="page-header__toggle page-header__toggle--opened" width="40" height="40" viewBox="0 0 40 40">
-          <g class="page-header__toggle__svgclose">
+          <g class="page-header__svgclose">
             <path
               d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z" />
             <path
               d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z" />
           </g>
-
-          <g class="page-header__toggle__svgopen">
+          <g class="page-header__svgopen">
             <path
               d="M15.087 11.933l8.56-8.559a.75.75 0 000-1.061L21.554.22a.747.747 0 00-1.06 0l-8.561 8.56L3.373.22a.771.771 0 00-1.061 0L.22 2.313a.75.75 0 000 1.061l8.56 8.559-8.56 8.559a.751.751 0 000 1.062l2.093 2.094a.744.744 0 001.06 0l8.561-8.56 8.56 8.56a.746.746 0 001.06 0l2.093-2.094a.751.751 0 000-1.062l-8.56-8.559z" />
           </g>
@@ -56,7 +60,7 @@
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link" href="index.html">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link">Фотографии</a>
@@ -70,7 +74,6 @@
       </ul>
     </nav>
   </header>
-
   <main class="photo-main">
     <section class="photos">
       <h1 class="photos__title">Фотографии пользователей</h1>
@@ -82,7 +85,7 @@
       <h2 class="visually-hidden">Публикации пользователей</h2>
       <ul class="publications__header">
         <li class="publications__item publications__item--main">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
@@ -94,7 +97,7 @@
             <div class="publications__sticker">
               панорама дня
             </div>
-          </div>
+          </a>
           <div class="publications__review publications__review--main">
             <div class="publications__box">
               <h3 class="publications__author">Анна</h3>
@@ -110,10 +113,9 @@
           </div>
         </li>
       </ul>
-
       <ul class="publications__list">
         <li class="publications__item">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
@@ -122,7 +124,7 @@
               <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
               <img class="publications__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="car">
             </picture>
-          </div>
+          </a>
           <div class="publications__review">
             <h3 class="publications__author">Левон</h3>
             <p class="publications__time">(5 часов назад)</p>
@@ -134,9 +136,8 @@
             </div>
           </div>
         </li>
-
         <li class="publications__item">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
@@ -145,8 +146,7 @@
               <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x ">
               <img class="publications__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Drums">
             </picture>
-          </div>
-
+          </a>
           <div class="publications__review">
             <h3 class="publications__author">Антон</h3>
             <p class="publications__time">(12 часов назад)</p>
@@ -158,9 +158,8 @@
             </div>
           </div>
         </li>
-
         <li class="publications__item">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
@@ -169,7 +168,7 @@
               <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
               <img class="publications__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="sky">
             </picture>
-          </div>
+          </a>
           <div class="publications__review">
             <h3 class="publications__author">Борис</h3>
             <p class="publications__time">(20 часов назад)</p>
@@ -181,9 +180,8 @@
             </div>
           </div>
         </li>
-
         <li class="publications__item">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
@@ -192,7 +190,7 @@
               <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
               <img class="publications__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="fest">
             </picture>
-          </div>
+          </a>
           <div class="publications__review">
             <h3 class="publications__author">Сергей</h3>
             <p class="publications__time">(25 часов назад)</p>
@@ -204,10 +202,8 @@
             </div>
           </div>
         </li>
-
-
         <li class="publications__item">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
@@ -216,7 +212,7 @@
               <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
               <img class="publications__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="green-mountains">
             </picture>
-          </div>
+          </a>
           <div class="publications__review">
             <h3 class="publications__author">Максим</h3>
             <p class="publications__time">(40 часов назад)</p>
@@ -229,7 +225,7 @@
           </div>
         </li>
         <li class="publications__item">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
@@ -238,7 +234,7 @@
               <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
               <img class="publications__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="sunrise">
             </picture>
-          </div>
+          </a>
           <div class="publications__review">
             <h3 class="publications__author">Надежда</h3>
             <p class="publications__time">(45 часов назад)</p>
@@ -248,7 +244,6 @@
               </button>
               <p class="publications__like">Нравится: 2560</p>
             </div>
-
           </div>
         </li>
       </ul>
@@ -274,7 +269,6 @@
           </div>
           <div class="upload__subwrapper">
             <div class="upload__filters">
-
               <div class="upload__filters-row upload__filters-row--1">
                 <button class="upload__filters-icon" type="button">
                   <svg class="upload__icon upload__icon--2" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="22px" viewBox="0 0 48 48" enable-background="new 0 0 48 48"
@@ -329,7 +323,6 @@
       </div>
     </section>
   </main>
-
   <footer class="page-footer">
     <div class="container container--main">
       <div class="page-footer__wrapper">
@@ -383,7 +376,6 @@
                     d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z">
                   </path>
                 </svg>
-
               </a>
             </li>
             <li class="social__item">
@@ -412,5 +404,4 @@
   </footer>
   <script src="js/menu.js"> </script>
 </body>
-
 </html>

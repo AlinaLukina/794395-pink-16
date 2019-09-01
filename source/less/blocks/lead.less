@@ -34,7 +34,6 @@
 .lead__description--photo {
   font-size: 14px;
   line-height: 30px;
-  width: 280px;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 44px 18px 0;
@@ -52,6 +51,10 @@
   background-size: cover;
   min-height: 170px;
   margin-bottom: 40px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 @media (max-width: 659px) and (min-width: 321px) {
@@ -63,6 +66,10 @@
     margin-bottom: 40px;
     display: flex;
     background-size: inherit;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .lead__description--form {
@@ -86,7 +93,6 @@
   .lead__description--photo {
     font-size: 18px;
     line-height: 30px;
-    width: 490px;
     padding-top: 37px;
     font-weight: 500;
   }
@@ -116,6 +122,10 @@
     background-position: 50% 28%;
     background-color: @background-color;
     min-height: 327px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 }
 
@@ -147,6 +157,10 @@
     background-color: @background-color;
     min-height: 395px;
     background-position: 50% 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .lead__description--offer {

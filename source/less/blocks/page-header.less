@@ -32,6 +32,10 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .page-header--opened {
@@ -77,15 +81,15 @@
   background-color: transparent;
 }
 
-.page-header__toggle--opened .page-header__toggle__svgopen {
+.page-header__toggle--opened .page-header__svgopen {
   display: block;
 }
 
-.page-header__toggle--opened .page-header__toggle__svgclose {
+.page-header__toggle--opened .page-header__svgclose {
   display: none;
 }
 
-.page-header__toggle--closed .page-header__toggle__svgopen {
+.page-header__toggle--closed .page-header__svgopen {
   display: none;
 }
 
@@ -131,6 +135,10 @@
 
   .page-header--closed {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 }
 
@@ -143,6 +151,8 @@
 @media (max-width: 659px) and (min-width: 321px) {
   .page-header--closed {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+
+
   }
 }
 

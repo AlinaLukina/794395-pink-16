@@ -540,7 +540,7 @@ body {
 @media (min-width: 1200px) {
   .advantages {
     margin-bottom: 0;
-    background-image: url(../img/bg-triangle-white.svg);
+    background-image: url("../img/bg-triangle-white.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }
