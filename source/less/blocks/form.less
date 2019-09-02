@@ -19,7 +19,6 @@
 }
 
 .form__btn {
-  margin: 0 auto;
   display: block;
   border: none;
   padding: 0;
@@ -29,7 +28,7 @@
   color: #ffffff;
   font-weight: 800;
   text-transform: uppercase;
-  margin-bottom: 34px;
+  margin: 0 auto 20px;
   border-radius: 2px;
   font-size: 18px;
 
@@ -55,6 +54,7 @@
   color: @background-color;
   text-transform: uppercase;
   width: 100%;
+  margin-bottom: 0;
 }
 
 .form__extra {
@@ -69,6 +69,7 @@
 .form__contact-info {
   width: 100%;
   border: none;
+  padding: 0;
 }
 
 .form__fieldset-paragraph {
@@ -141,6 +142,7 @@
   background-color: #f2f2f2;
   width: 100%;
   border: none;
+  padding: 0;
 }
 
 .form__fieldset--contacts {
@@ -155,15 +157,27 @@
   border: none;
 }
 
-.form__fieldset--header {
-  margin-bottom: 25px;
+.form__main .form__fieldset--header {
+  margin: 0 auto 25px;
+}
+
+.form__main .form__fieldset--contacts {
+  margin: 15px auto 25px;
 }
 
 @media (min-width: @tablet-width) {
+  .form__main {
+    margin-bottom: 85px;
+  }
+
+  .form__main .form__fieldset--header {
+    margin: 0 auto 5px;
+  }
+
   .form__travel-app {
     background-color: transparent;
     border: 2px solid #e5e5e5;
-    margin: 0 20px 60px;
+    margin: 0 0 42px;
   }
 
   .form__paragraph {
@@ -173,9 +187,8 @@
 
   .form__contact-info {
     border: 2px solid #e5e5e5;
-    margin: 0 20px;
-    padding: 35px 60px;
-    margin-bottom: 60px;
+    padding: 23px 60px 0;
+    margin: 0 0 30px;
   }
 
   .form__contact-info input {
@@ -250,10 +263,40 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form__main .form__fieldset--header {
+    padding: 0 10px;
+  }
+
+  .form__main .form__fieldset--text {
+    padding: 0 10px;
+  }
+
+  .form__main .form__footer {
+    padding: 0 10px;
+  }
+
+  .form__main .form__fieldset--skills {
+    padding: 0 10px;
+  }
+
+  .form__main .form__fieldset--contacts {
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .form__main .form__fieldset--app {
+    padding: 18px 10px 15px 35px;
+  }
+
   .form__contact-wrap {
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .form__contact-info {
+    margin: 0 auto 60px;
+    padding: 20px 60px 0;
   }
 
   .form__wrapper {
@@ -265,7 +308,8 @@
 
   .form__wrapper form {
     width: 100%;
-    margin-bottom: 31px;
+    max-width: 960px;
+    margin: 0 auto 31px;
   }
 
   .form__fieldset--app {
@@ -289,12 +333,13 @@
 
   .form__fieldset-paragraph {
     display: flex;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
+    max-width: 375px;
   }
 
   .form__identity {
     box-sizing: border-box;
-    margin-right: 50px;
+    margin-right: 25px;
     margin-top: 33px;
   }
 
