@@ -67,7 +67,7 @@
   .table {
     margin: -7px auto 67px;
     transform: none;
-    left: initial;
+    left: 0;
   }
 
   .table__tariff {
@@ -106,11 +106,16 @@
     top: 0;
     left: 0;
   }
+
+  .table__cell {
+    border: 2px solid #e5e5e5;
+    padding: 1px 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .table {
-    margin-top: 58px;
+    margin-top: 48px;
   }
 
   .table__head {

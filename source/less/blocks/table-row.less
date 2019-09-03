@@ -12,6 +12,8 @@
   display: none;
   margin-top: 1px;
   border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  background-color: #ffffff;
 }
 
 .table-row__filter--check {
@@ -19,8 +21,6 @@
   line-height: 30px;
   color: #283645;
   text-transform: uppercase;
-  background-color: #ffffff;
-  position: relative;
   width: 280px;
   height: 59px;
   display: flex;
@@ -55,7 +55,6 @@
   color: #283645;
   text-transform: uppercase;
   background-color: #ffffff;
-  position: relative;
   width: 280px;
   height: 59px;
   display: flex;
@@ -130,6 +129,8 @@
 
   .table-row__filter {
     width: 155px;
+    height: 43px;
+    border: 0;
   }
 
   .table-row__check,
@@ -140,8 +141,8 @@
   .table-row__check,
   .table-row__cross,
   .table-row__filter {
-    border: 2px solid #e5e5e5;
-    padding: 10px 0;
+    border: 0;
+    padding: 0;
   }
 
   .table-row__filter--comments::after,
@@ -158,16 +159,21 @@
     padding-top: 7px;
     font-size: 14px;
     line-height: 30px;
+    border: 2px solid #e5e5e5;
   }
 }
 
 @media (min-width: @desktop-width) {
   .table-row__filter {
     width: 235px;
-    padding: 13px 0;
+    padding: 0 0 0 22px;
     line-height: 35px;
-    padding-left: 22px;
     box-sizing: border-box;
     font-size: 18px;
+    height: 58px;
+  }
+
+  .table__head {
+    width: 235px;
   }
 }

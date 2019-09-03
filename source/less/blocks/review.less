@@ -79,7 +79,7 @@
 @media (min-width: @desktop-width) {
   .review {
     max-width: 1200px;
-    margin: 187px auto 38px;
+    margin: 187px auto 47px;
   }
 
   .review__description {
@@ -114,13 +114,27 @@
     background-size: contain;
 
     &--left {
-      left: 129px;
-      background-image: url("../img/icon-review-arrow-left.svg");
+      left: 0;
     }
 
     &--right {
-      right: 129px;
-      background-image: url("../img/icon-review-arrow-right.svg");
+      right: 20px;
+    }
+  }
+
+  .review__button svg {
+    fill: @background-color;
+    opacity: 0.3;
+
+    &:hover {
+      fill: @background-color;
+      opacity: 0.6;
+    }
+
+    &:focus,
+    &active {
+      fill: @background-color;
+      opacity: 0.1;
     }
   }
 
